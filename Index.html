@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Scottish data analytics portfolio project exploring the relationship between median house prices and school-leaver attainment across Data Zones from 2014 to 2018.">
+
+  <title>Scottish Housing &amp; School Attainment | Data Analytics Portfolio</title>
+
+  <style>
+    :root {
+      --navy: #14243b;
+      --blue: #4263eb;
+      --blue-light: #edf2ff;
+      --background: #f5f7fb;
+      --surface: #ffffff;
+      --text: #243247;
+      --muted: #637187;
+      --border: #e1e7f0;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--navy);
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 76px 0 68px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      right: -100px;
+      top: -180px;
+      box-shadow:
+        0 0 0 40px rgba(255, 255, 255, 0.025),
+        0 0 0 80px rgba(255, 255, 255, 0.025);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #dbe5ff;
+      border: 1px solid rgba(219, 229, 255, 0.4);
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      letter-spacing: -0.045em;
+      line-height: 1.08;
+      max-width: 850px;
+      margin: 24px 0 18px;
+    }
+
+    .hero-description {
+      color: #d8e1f1;
+      max-width: 720px;
+      font-size: 1.12rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 9px;
+      font-weight: 650;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: white;
+      color: var(--navy);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: white;
+    }
+
+    main {
+      padding: 36px 0 64px;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(22px, 4vw, 36px);
+      margin-bottom: 24px;
+      box-shadow: 0 5px 18px rgba(20, 36, 59, 0.035);
+    }
+
+    .section-label {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.76rem;
+      font-weight: 750;
+      margin: 0 0 6px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      color: var(--navy);
+      font-size: 1.08rem;
+      margin: 24px 0 7px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .question {
+      border-left: 4px solid var(--blue);
+      background: var(--blue-light);
+      padding: 17px 20px;
+      border-radius: 0 10px 10px 0;
+      margin-top: 22px;
+    }
+
+    .question strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .dashboard-section {
+      padding: clamp(16px, 3vw, 28px);
+    }
+
+    .dashboard-heading {
+      padding: 8px 8px 20px;
+    }
+
+    .dashboard-frame {
+      width: 100%;
+      min-height: 650px;
+      background: #f7f9fc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .tableauPlaceholder {
+      width: 100%;
+      position: relative;
+    }
+
+    .tableauPlaceholder .tableauViz {
+      width: 100% !important;
+      min-height: 650px;
+      display: block;
+    }
+
+    .dashboard-fallback {
+      padding: 18px;
+      font-size: 0.95rem;
+    }
+
+    .dashboard-fallback img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .dashboard-link {
+      display: inline-block;
+      margin: 18px 8px 4px;
+      font-weight: 650;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 20px 0 8px;
+    }
+
+    .skills span {
+      background: var(--blue-light);
+      color: #2948a5;
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .steps {
+      padding-left: 22px;
+    }
+
+    .steps li {
+      padding: 5px 0 5px 4px;
+    }
+
+    .data-source {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+
+    .data-source h3 {
+      margin-top: 0;
+    }
+
+    .data-source p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      background: #f7f9fc;
+      padding: 16px 18px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d8e1f1;
+      padding: 28px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 52px 0 48px;
+      }
+
+      .container {
+        width: min(100% - 24px, 1120px);
+      }
+
+      main {
+        padding-top: 18px;
+      }
+
+      .section {
+        margin-bottom: 16px;
+      }
+
+      .dashboard-frame {
+        min-height: 560px;
+      }
+
+      .tableauPlaceholder .tableauViz {
+        min-height: 560px;
+      }
+
+      .hero-links {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .hero-links .button {
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <span class="eyebrow">Data Analytics Portfolio · Scotland</span>
+
+      <h1>Scottish Housing Prices &amp; School Attainment</h1>
+
+      <p class="hero-description">
+        Exploring the relationship between school-leaver educational
+        attainment and median house prices across Scottish Data Zones
+        between 2014 and 2018.
+      </p>
+
+      <div class="hero-links">
+        <a class="button button-primary" href="#dashboard">
+          Explore the dashboard ↓
+        </a>
+        <a class="button button-secondary"
+           href="https://data.gov.scot/dataset/house_prices"
+           target="_blank" rel="noopener noreferrer">
+          View original data
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <p class="section-label">01 · Overview</p>
+      <h2>About the project</h2>
+
+      <p>
+        This project investigates whether Scottish Data Zones with higher
+        school-leaver attainment scores also tend to have higher median
+        house prices. It brings together two public datasets to explore
+        patterns across geography and time.
+      </p>
+
+      <p>
+        The aim is to demonstrate practical data analytics skills,
+        including data preparation, joining datasets, checking data
+        quality, exploratory analysis and interactive visualisation.
+      </p>
+
+      <div class="question">
+        <strong>Research question</strong>
+        Is there an observable relationship between area-level educational
+        attainment and median house prices across Scotland?
+      </div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="dashboard-heading">
+        <p class="section-label">02 · Interactive visualisation</p>
+        <h2>Explore the data</h2>
+        <p class="muted">
+          Use the Tableau dashboard to explore the relationship between
+          attainment and house prices. Interact with the chart and select
+          data points to investigate individual areas.
+        </p>
+      </div>
+
+      <div class="dashboard-frame">
+        <div class="tableauPlaceholder"
+             id="viz1793108240470"
+             style="position: relative; width: 100%;">
+
+          <noscript>
+            <div class="dashboard-fallback">
+              <a href="https://public.tableau.com/views/HousingAtainment/Dashboard1"
+                 target="_blank" rel="noopener noreferrer">
+                <img
+                  alt="Scottish housing prices and school attainment dashboard"
+                  src="https://public.tableau.com/static/images/Ho/HousingAtainment/Dashboard1/1.png">
+              </a>
+              <p>
+                JavaScript is required to display the interactive dashboard.
+                Select the image to open it on Tableau Public.
+              </p>
+            </div>
+          </noscript>
+
+          <object class="tableauViz" style="display:none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+            <param name="embed_code_version" value="3">
+            <param name="site_root" value="">
+            <param name="name" value="HousingAtainment%2FDashboard1">
+            <param name="tabs" value="no">
+            <param name="toolbar" value="yes">
+            <param name="static_image"
+                   value="https%3A%2F%2Fpublic.tableau.com%2Fstatic%2Fimages%2FHo%2FHousingAtainment%2FDashboard1%2F1.png">
+            <param name="animate_transition" value="yes">
+            <param name="display_static_image" value="yes">
+            <param name="display_spinner" value="yes">
+            <param name="display_overlay" value="yes">
+            <param name="display_count" value="yes">
+            <param name="language" value="en-GB">
+            <param name="filter" value="publish=yes">
+          </object>
+        </div>
+      </div>
+
+      <a class="dashboard-link"
+         href="https://public.tableau.com/views/HousingAtainment/Dashboard1"
+         target="_blank" rel="noopener noreferrer">
+        Open dashboard directly on Tableau Public ↗
+      </a>
+    </section>
+
+    <section class="section">
+      <p class="section-label">03 · Technical skills</p>
+      <h2>Tools &amp; techniques</h2>
+
+      <div class="skills">
+        <span>Tableau Public</span>
+        <span>Power BI</span>
+        <span>Data cleaning</span>
+        <span>Data integration</span>
+        <span>Geographic identifiers</span>
+        <span>Calculated fields</span>
+        <span>Exploratory analysis</span>
+        <span>Data visualisation</span>
+      </div>
+
+      <p>
+        The work involved preparing house-price and school-attainment
+        datasets, aligning geography codes and comparison years, creating
+        calculated fields, investigating unusual values and developing an
+        interactive dashboard.
+      </p>
+
+      <p>
+        Tableau was used to present the findings in an accessible format,
+        allowing users to explore the relationship between the two
+        measures across the selected years.
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="section-label">04 · Approach</p>
+      <h2>Methodology</h2>
+
+      <ol class="steps">
+        <li>
+          <strong>Prepare the data.</strong>
+          Filter house-price records to the selected years, median measure
+          and relevant Data Zone geography.
+        </li>
+        <li>
+          <strong>Align the reporting periods.</strong>
+          Prepare the school-leaver attainment data so its comparison
+          year can be matched to the house-price year.
+        </li>
+        <li>
+          <strong>Match geographic records.</strong>
+          Use the 2011 Data Zone geography codes to connect the datasets.
+        </li>
+        <li>
+          <strong>Explore the relationship.</strong>
+          Use a scatter plot, year-based colours and trend lines to
+          investigate patterns in the data.
+        </li>
+        <li>
+          <strong>Review data quality.</strong>
+          Check unmatched records, missing values and extreme observations
+          before interpreting the results.
+        </li>
+      </ol>
+
+      <h3>Limitations and interpretation</h3>
+      <p>
+        The attainment data uses overlapping three-year reporting periods.
+        Consequently, adjacent comparison years are not independent
+        observations. Coverage may also vary where records cannot be
+        matched between datasets.
+      </p>
+
+      <p>
+        Both measures describe areas rather than individual people or
+        households. Any observed relationship is an area-level association
+        and does not demonstrate that educational attainment causes higher
+        house prices, or vice versa.
+      </p>
+
+      <p class="note">
+        The results should be interpreted as exploratory analysis for
+        2014–2018, not as evidence of a causal relationship or a prediction
+        of current house prices.
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="section-label">05 · Open data</p>
+      <h2>Data sources &amp; licensing</h2>
+
+      <p>
+        The project uses publicly available data from Data about Scotland.
+        Follow the links below to view the original dataset descriptions
+        and access the source files.
+      </p>
+
+      <div class="data-source">
+        <h3>House prices</h3>
+        <p>
+          Scottish Government — House Prices.
+        </p>
+        <p>
+          <a href="https://data.gov.scot/dataset/house_prices"
+             target="_blank" rel="noopener noreferrer">
+            View house-price dataset ↗
+          </a>
+        </p>
+      </div>
+
+      <div class="data-source">
+        <h3>Educational attainment</h3>
+        <p>
+          Scottish Government — Educational Attainment of School Leavers.
+        </p>
+        <p>
+          <a href="https://data.gov.scot/dataset/educational_attainment_of_school_leavers"
+             target="_blank" rel="noopener noreferrer">
+            View educational-attainment dataset ↗
+          </a>
+        </p>
+      </div>
+
+      <h3>Licence and attribution</h3>
+      <p>
+        The dataset pages identify the
+        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+           target="_blank" rel="noopener noreferrer">
+          Open Government Licence v3.0
+        </a>.
+        Please refer to each source page for its exact attribution
+        requirements.
+      </p>
+
+      <p>
+        The datasets were prepared, matched and analysed for this
+        portfolio project. The data preparation, analysis and dashboard
+        design are my own work.
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="section-label">06 · Source code</p>
+      <h2>Project repository</h2>
+
+      <p>
+        The GitHub repository can contain the project documentation,
+        data-preparation notes and supporting files alongside this
+        portfolio page.
+      </p>
+
+      <p class="muted">
+        Replace the link below with your public GitHub repository URL.
+      </p>
+
+      <a href="YOUR_GITHUB_REPOSITORY_URL"
+         target="_blank" rel="noopener noreferrer">
+        View project repository on GitHub ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      Scottish Housing Prices &amp; School Attainment · Data Analytics Portfolio
+      <br>
+      <span>Data period: 2014–2018 · Scotland</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var divElement = document.getElementById("viz1793108240470");
+      if (!divElement) return;
+
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      if (!vizElement) return;
+
+      function sizeDashboard() {
+        var availableWidth = divElement.parentElement.clientWidth;
+        var isMobile = window.matchMedia("(max-width: 650px)").matches;
+
+        vizElement.style.display = "block";
+        vizElement.style.width = "100%";
+        vizElement.style.height = isMobile ? "650px" : "850px";
+      }
+
+      sizeDashboard();
+
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      scriptElement.async = true;
+
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+      window.addEventListener("resize", sizeDashboard);
+    })();
+  </script>
+</body>
+</html>

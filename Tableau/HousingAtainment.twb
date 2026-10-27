@@ -1,0 +1,2186 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='51cb229ac0a2000cb47af0daca26000b1e7645bafe4bf3a87ca27079f277302d' _.fcp.WorkbookFingerprinting.true...creator-author-id='51cb229ac0a2000cb47af0daca26000b1e7645bafe4bf3a87ca27079f277302d' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='51cb229ac0a2000cb47af0daca26000b1e7645bafe4bf3a87ca27079f277302d' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='51cb229ac0a2000cb47af0daca26000b1e7645bafe4bf3a87ca27079f277302d' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <RelationshipCalculations />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='school_attainment' inline='true' name='federated.0o1ffob0c4745g1dw3e2y0difub6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='school_attainment' name='textscan.0rp9w901407zeu1fyop021rc6xl6'>
+            <connection class='textscan' directory='C:/Users/Alex McQuire/Documents/Scottish-Housing-Attainment/data/raw' filename='school_attainment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rp9w901407zeu1fyop021rc6xl6' name='school_attainment.csv' table='[school_attainment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='GeographyCode' ordinal='0' />
+            <column datatype='string' name='GeographyName' ordinal='1' />
+            <column datatype='string' name='GeographyType' ordinal='2' />
+            <column datatype='string' name='DateCode' ordinal='3' />
+            <column datatype='string' name='Measurement' ordinal='4' />
+            <column datatype='string' name='Units' ordinal='5' />
+            <column datatype='real' name='Value' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyCode]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyCode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyName]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyType]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyType</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DateCode]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>DateCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measurement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Measurement]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Measurement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Units]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ComparisonYear' datatype='integer' name='[Calculation_1924755125116929]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(&#13;&#10;    RIGHT([DateCode], 4)&#13;&#10;)' />
+      </column>
+      <column caption='Date Code' datatype='string' name='[DateCode]' role='dimension' type='nominal' />
+      <column caption='school_attainment.csv' datatype='table' name='[__tableau_internal_object_id__].[school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/ALEXMC~1/AppData/Local/Temp/TableauTemp/#TableauTemp_00ykxpv1uomdmu1gu5cp3101ib6s.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/26/2026 07:48:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GeographyCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GeographyCode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GeographyName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GeographyType</remote-alias>
+              <ordinal>2</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DateCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateCode</remote-alias>
+              <ordinal>3</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measurement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Measurement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Measurement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Units</remote-alias>
+              <ordinal>5</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>6</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3888</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='GeographyCode' />
+        <field-sort-custom-order field='GeographyName' />
+        <field-sort-custom-order field='GeographyType' />
+        <field-sort-custom-order field='DateCode' />
+        <field-sort-custom-order field='Calculation_1924755125116929' />
+        <field-sort-custom-order field='Measurement' />
+        <field-sort-custom-order field='Units' />
+        <field-sort-custom-order field='Value' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='school_attainment.csv' id='school_attainment.csv_2216F55A12744A4C9BDF4EA860AA4344'>
+            <properties context=''>
+              <relation connection='textscan.0rp9w901407zeu1fyop021rc6xl6' name='school_attainment.csv' table='[school_attainment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='GeographyCode' ordinal='0' />
+                  <column datatype='string' name='GeographyName' ordinal='1' />
+                  <column datatype='string' name='GeographyType' ordinal='2' />
+                  <column datatype='string' name='DateCode' ordinal='3' />
+                  <column datatype='string' name='Measurement' ordinal='4' />
+                  <column datatype='string' name='Units' ordinal='5' />
+                  <column datatype='real' name='Value' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='house_prices' inline='true' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='house_prices' name='textscan.1712ace1pjh7lw1bcqlv80mamwx8'>
+            <connection class='textscan' directory='C:/Users/Alex McQuire/Documents/Scottish-Housing-Attainment/data/raw' filename='house_prices.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1712ace1pjh7lw1bcqlv80mamwx8' name='school_attainment.csv' table='[school_attainment#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='string' name='GeographyCode' ordinal='0' />
+              <column datatype='string' name='GeographyName' ordinal='1' />
+              <column datatype='string' name='GeographyType' ordinal='2' />
+              <column datatype='string' name='DateCode' ordinal='3' />
+              <column datatype='string' name='Measurement' ordinal='4' />
+              <column datatype='string' name='Units' ordinal='5' />
+              <column datatype='real' name='Value' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1712ace1pjh7lw1bcqlv80mamwx8' name='house_prices.csv' table='[house_prices#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='string' name='GeographyCode' ordinal='0' />
+              <column datatype='string' name='GeographyName' ordinal='1' />
+              <column datatype='string' name='GeographyType' ordinal='2' />
+              <column datatype='integer' name='DateCode' ordinal='3' />
+              <column datatype='string' name='Measurement' ordinal='4' />
+              <column datatype='string' name='Units' ordinal='5' />
+              <column datatype='integer' name='Value' ordinal='6' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[DateCode (house_prices.csv)]' value='[house_prices.csv].[DateCode]' />
+          <map key='[DateCode]' value='[school_attainment.csv].[DateCode]' />
+          <map key='[GeographyCode (house_prices.csv)]' value='[house_prices.csv].[GeographyCode]' />
+          <map key='[GeographyCode]' value='[school_attainment.csv].[GeographyCode]' />
+          <map key='[GeographyName (house_prices.csv)]' value='[house_prices.csv].[GeographyName]' />
+          <map key='[GeographyName]' value='[school_attainment.csv].[GeographyName]' />
+          <map key='[GeographyType (house_prices.csv)]' value='[house_prices.csv].[GeographyType]' />
+          <map key='[GeographyType]' value='[school_attainment.csv].[GeographyType]' />
+          <map key='[Measurement (house_prices.csv)]' value='[house_prices.csv].[Measurement]' />
+          <map key='[Measurement]' value='[school_attainment.csv].[Measurement]' />
+          <map key='[Units (house_prices.csv)]' value='[house_prices.csv].[Units]' />
+          <map key='[Units]' value='[school_attainment.csv].[Units]' />
+          <map key='[Value (house_prices.csv)]' value='[house_prices.csv].[Value]' />
+          <map key='[Value]' value='[school_attainment.csv].[Value]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyCode]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyCode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyName]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyType]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>GeographyType</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DateCode]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>DateCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measurement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Measurement]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Measurement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Units]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[school_attainment.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyCode (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>GeographyCode</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyName (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>GeographyName</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographyType (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>GeographyType</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DateCode (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>DateCode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measurement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Measurement (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>Measurement</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Units (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value (house_prices.csv)]</local-name>
+            <parent-name>[house_prices.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ComparisonYear' datatype='integer' datatype-customized='true' name='[Calculation_0619909919969282]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='INT(MID(&#13;&#10;        TRIM([DateCode]),&#13;&#10;        FIND(TRIM([DateCode]), &quot;-&quot;) + 1,&#13;&#10;        4&#13;&#10;    ))' />
+      </column>
+      <column caption='Matched Data Zones' datatype='integer' name='[Calculation_0619909973614596]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF NOT ISNULL([Value])&#13;&#10;    THEN [GeographyCode (house_prices.csv)]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='DateCode (house prices.csv)' datatype='integer' name='[DateCode (house_prices.csv)]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[DateCode]' role='dimension' type='nominal' />
+      <column caption='GeographyCode (house prices.csv)' datatype='string' name='[GeographyCode (house_prices.csv)]' role='dimension' type='nominal' />
+      <column caption='GeographyName (house prices.csv)' datatype='string' name='[GeographyName (house_prices.csv)]' role='dimension' type='nominal' />
+      <column caption='GeographyType (house prices.csv)' datatype='string' name='[GeographyType (house_prices.csv)]' role='dimension' type='nominal' />
+      <column caption='Measurement (house prices.csv)' datatype='string' name='[Measurement (house_prices.csv)]' role='dimension' type='nominal' />
+      <column caption='Units (house prices.csv)' datatype='string' name='[Units (house_prices.csv)]' role='dimension' type='nominal' />
+      <column caption='Value (house prices.csv)' datatype='integer' default-format='C2057%' name='[Value (house_prices.csv)]' role='measure' type='quantitative' />
+      <column caption='house_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]' role='measure' type='quantitative' />
+      <column caption='school_attainment.csv' datatype='table' name='[__tableau_internal_object_id__].[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]' role='measure' type='quantitative' />
+      <column-instance column='[DateCode (house_prices.csv)]' derivation='None' name='[none:DateCode (house_prices.csv):ok]' pivot='key' type='ordinal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/ALEXMC~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1ml01qy0yjj1ck152zst90v76fpn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/27/2026 09:40:44 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240' table='[Extract].[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]' type='table' />
+            <relation name='house_prices.csv_5464A6BE5E764743B29E204FB12B5A07' table='[Extract].[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]' type='table' />
+          </relation>
+          <cols>
+            <map key='[DateCode (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[DateCode]' />
+            <map key='[DateCode]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[DateCode]' />
+            <map key='[GeographyCode (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[GeographyCode]' />
+            <map key='[GeographyCode]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[GeographyCode]' />
+            <map key='[GeographyName (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[GeographyName]' />
+            <map key='[GeographyName]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[GeographyName]' />
+            <map key='[GeographyType (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[GeographyType]' />
+            <map key='[GeographyType]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[GeographyType]' />
+            <map key='[Measurement (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[Measurement]' />
+            <map key='[Measurement]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[Measurement]' />
+            <map key='[Units (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[Units]' />
+            <map key='[Units]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[Units]' />
+            <map key='[Value (house_prices.csv)]' value='[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07].[Value]' />
+            <map key='[Value]' value='[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240].[Value]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GeographyCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyCode]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>GeographyCode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyName]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>GeographyName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyType]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>GeographyType</remote-alias>
+              <ordinal>2</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DateCode]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>DateCode</remote-alias>
+              <ordinal>3</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measurement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Measurement]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>Measurement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Units]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>Units</remote-alias>
+              <ordinal>5</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>6</ordinal>
+              <family>school_attainment.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3888</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyCode (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>GeographyCode</remote-alias>
+              <ordinal>7</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68145</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyName (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>GeographyName</remote-alias>
+              <ordinal>8</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34621</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GeographyType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GeographyType (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>GeographyType</remote-alias>
+              <ordinal>9</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DateCode (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>DateCode</remote-alias>
+              <ordinal>10</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Measurement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Measurement (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>Measurement</remote-alias>
+              <ordinal>11</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Units (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>Units</remote-alias>
+              <ordinal>12</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Value (house_prices.csv)]</local-name>
+              <parent-name>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>13</ordinal>
+              <family>house_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36580</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:DateCode (house_prices.csv):ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2015</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='GeographyCode' />
+        <field-sort-custom-order field='GeographyName' />
+        <field-sort-custom-order field='GeographyType' />
+        <field-sort-custom-order field='DateCode' />
+        <field-sort-custom-order field='Calculation_0619909919969282' />
+        <field-sort-custom-order field='Calculation_0619909918867456' />
+        <field-sort-custom-order field='Measurement' />
+        <field-sort-custom-order field='Units' />
+        <field-sort-custom-order field='Value' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <filter class='categorical' column='[DateCode]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[DateCode]' member='&quot;2012/13-2014/15&quot;' />
+          <groupfilter function='member' level='[DateCode]' member='&quot;2013/14-2015/16&quot;' />
+          <groupfilter function='member' level='[DateCode]' member='&quot;2014/15-2016/17&quot;' />
+          <groupfilter function='member' level='[DateCode]' member='&quot;2015/16-2017/18&quot;' />
+          <groupfilter function='member' level='[DateCode]' member='&quot;2016/17-2018/19&quot;' />
+        </groupfilter>
+      </filter>
+      <object-graph>
+        <objects>
+          <object caption='house_prices.csv' id='house_prices.csv_5464A6BE5E764743B29E204FB12B5A07'>
+            <properties context=''>
+              <relation connection='textscan.1712ace1pjh7lw1bcqlv80mamwx8' name='house_prices.csv' table='[house_prices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='GeographyCode' ordinal='0' />
+                  <column datatype='string' name='GeographyName' ordinal='1' />
+                  <column datatype='string' name='GeographyType' ordinal='2' />
+                  <column datatype='integer' name='DateCode' ordinal='3' />
+                  <column datatype='string' name='Measurement' ordinal='4' />
+                  <column datatype='string' name='Units' ordinal='5' />
+                  <column datatype='integer' name='Value' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='house_prices.csv_5464A6BE5E764743B29E204FB12B5A07' table='[Extract].[house_prices.csv_5464A6BE5E764743B29E204FB12B5A07]' type='table' />
+            </properties>
+          </object>
+          <object caption='school_attainment.csv' id='school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240'>
+            <properties context=''>
+              <relation connection='textscan.1712ace1pjh7lw1bcqlv80mamwx8' name='school_attainment.csv' table='[school_attainment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='GeographyCode' ordinal='0' />
+                  <column datatype='string' name='GeographyName' ordinal='1' />
+                  <column datatype='string' name='GeographyType' ordinal='2' />
+                  <column datatype='string' name='DateCode' ordinal='3' />
+                  <column datatype='string' name='Measurement' ordinal='4' />
+                  <column datatype='string' name='Units' ordinal='5' />
+                  <column datatype='real' name='Value' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240' table='[Extract].[school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[GeographyCode]' />
+                <expression op='[GeographyCode (house_prices.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='INT(MID(&#13;&#10;        TRIM([DateCode]),&#13;&#10;        FIND(TRIM([DateCode]), &quot;-&quot;) + 1,&#13;&#10;        4&#13;&#10;    ))' />
+                <expression op='[DateCode (house_prices.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='school_attainment.csv_9CB31A9DB07B49D1BF0C5050596D6240' />
+            <second-end-point object-id='house_prices.csv_5464A6BE5E764743B29E204FB12B5A07' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Attainment V House Prices'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>School Attainment vs Median House Prices (2014–2018)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house_prices' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5aiq917qmz1o123gfz90s8aa7x'>
+            <column caption='DateCode (house prices.csv)' datatype='integer' name='[DateCode (house_prices.csv)]' role='dimension' type='ordinal' />
+            <column caption='GeographyCode (house prices.csv)' datatype='string' name='[GeographyCode (house_prices.csv)]' role='dimension' type='nominal' />
+            <column caption='GeographyName (house prices.csv)' datatype='string' name='[GeographyName (house_prices.csv)]' role='dimension' type='nominal' />
+            <column caption='Measurement (house prices.csv)' datatype='string' name='[Measurement (house_prices.csv)]' role='dimension' type='nominal' />
+            <column caption='Value (house prices.csv)' datatype='integer' default-format='C2057%' name='[Value (house_prices.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[GeographyName (house_prices.csv)]' derivation='Attribute' name='[attr:GeographyName (house_prices.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value (house_prices.csv)]' derivation='Avg' name='[avg:Value (house_prices.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DateCode (house_prices.csv)]' derivation='None' name='[none:DateCode (house_prices.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GeographyCode (house_prices.csv)]' derivation='None' name='[none:GeographyCode (house_prices.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[GeographyName (house_prices.csv)]' derivation='None' name='[none:GeographyName (house_prices.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measurement (house_prices.csv)]' derivation='None' name='[none:Measurement (house_prices.csv):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]'>
+            <groupfilter function='member' level='[none:Measurement (house_prices.csv):nk]' member='&quot;Median&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' scope='cols' value='Average School Attainment Score' />
+            <format attr='title' class='0' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' scope='rows' value='Median House Price (£)' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]' value='Date'>
+              <formatted-text>
+                <run>Date</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]' />
+              <tooltip column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[attr:GeographyName (house_prices.csv):nk]' />
+              <tooltip column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' />
+              <tooltip column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' />
+              <lod column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[attr:GeographyName (house_prices.csv):nk]' />
+              <lod column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyCode (house_prices.csv):nk]' />
+              <lod column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName (house_prices.csv):nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='exp' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Academic Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Geography Code:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyCode (house_prices.csv):nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Geography Name:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName (house_prices.csv):nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Median House Price:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Attainment Score:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]</rows>
+        <cols>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]</cols>
+      </table>
+      <simple-id uuid='{3A41DBF6-978E-497F-B997-78EEBCDABB7B}' />
+    </worksheet>
+    <worksheet name='KPI - Average Attainment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Average Attaiment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house_prices' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5aiq917qmz1o123gfz90s8aa7x'>
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='font-size' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' value='24' />
+            <format attr='font-weight' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' value='bold' />
+            <format attr='text-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8C0E025F-AB57-49DD-8FC2-7A107513E7D4}' />
+    </worksheet>
+    <worksheet name='KPI - Average House Price'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Average House Prices</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house_prices' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5aiq917qmz1o123gfz90s8aa7x'>
+            <column caption='Measurement (house prices.csv)' datatype='string' name='[Measurement (house_prices.csv)]' role='dimension' type='nominal' />
+            <column caption='Value (house prices.csv)' datatype='integer' default-format='C2057%' name='[Value (house_prices.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[Value (house_prices.csv)]' derivation='Avg' name='[avg:Value (house_prices.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Measurement (house_prices.csv)]' derivation='None' name='[none:Measurement (house_prices.csv):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]'>
+            <groupfilter function='member' level='[none:Measurement (house_prices.csv):nk]' member='&quot;Median&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' value='24' />
+            <format attr='text-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' value='center' />
+            <format attr='font-weight' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' value='bold' />
+            <format attr='text-format' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' value='c&quot;£&quot;#,##0;-&quot;£&quot;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F5AC7DE7-9461-4491-8674-EC1783831C5E}' />
+    </worksheet>
+    <worksheet name='KPI - Matched Data Zones'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Matched Data Zones</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house_prices' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5aiq917qmz1o123gfz90s8aa7x'>
+            <column caption='GeographyCode (house prices.csv)' datatype='string' name='[GeographyCode (house_prices.csv)]' role='dimension' type='nominal' />
+            <column-instance column='[GeographyCode (house_prices.csv)]' derivation='CountD' name='[ctd:GeographyCode (house_prices.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[ctd:GeographyCode (house_prices.csv):qk]' value='24' />
+            <format attr='font-weight' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[ctd:GeographyCode (house_prices.csv):qk]' value='bold' />
+            <format attr='text-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[ctd:GeographyCode (house_prices.csv):qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[ctd:GeographyCode (house_prices.csv):qk]' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[ctd:GeographyCode (house_prices.csv):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AF572234-E7E5-42A9-A89E-9CDC13AFA892}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house_prices' name='federated.0v5aiq917qmz1o123gfz90s8aa7x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5aiq917qmz1o123gfz90s8aa7x'>
+            <column caption='ComparisonYear' datatype='integer' datatype-customized='true' name='[Calculation_0619909919969282]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='INT(MID(&#13;&#10;        TRIM([DateCode]),&#13;&#10;        FIND(TRIM([DateCode]), &quot;-&quot;) + 1,&#13;&#10;        4&#13;&#10;    ))' />
+            </column>
+            <column datatype='string' name='[DateCode]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GeographyName]' role='dimension' type='nominal' />
+            <column caption='Measurement (house prices.csv)' datatype='string' name='[Measurement (house_prices.csv)]' role='dimension' type='nominal' />
+            <column caption='Value (house prices.csv)' datatype='integer' default-format='C2057%' name='[Value (house_prices.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value (house_prices.csv)]' derivation='Avg' name='[avg:Value (house_prices.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0619909919969282]' derivation='None' name='[none:Calculation_0619909919969282:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GeographyName]' derivation='None' name='[none:GeographyName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Measurement (house_prices.csv)]' derivation='None' name='[none:Measurement (house_prices.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0v5aiq917qmz1o123gfz90s8aa7x].[sum:Value:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName:nk]' direction='DESC' using='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' />
+          <filter class='categorical' column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]'>
+            <groupfilter function='member' level='[none:Measurement (house_prices.csv):nk]' member='&quot;Median&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]</column>
+            <column>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='949' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Calculation_0619909919969282:ok]' value='92' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[avg:Value (house_prices.csv):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName:nk] / ([federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName:nk] / [federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Calculation_0619909919969282:ok]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4C60B6FD-48C9-417D-90EA-0169182F9F60}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='11' param='horz' type-v2='layout-flow' w='99166' x='417' y='741'>
+            <zone h='98518' id='9' type-v2='layout-basic' w='99166' x='417' y='741'>
+              <zone forceUpdate='true' h='11666' id='3' type-v2='text' w='99166' x='417' y='741'>
+                <formatted-text>
+                  <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Scottish Housing &amp; School Attainment</run>
+                  <run fontalignment='1'>Æ&#10;</run>
+                  <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Exploring the relationship between area-level attainment and median house prices, 2014–2018.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10000' id='5' name='KPI - Average House Price' w='36558' x='43783' y='12407'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='66852' id='8' name='Attainment V House Prices' w='89649' x='9934' y='22407'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10000' id='6' name='KPI - Average Attainment' w='43366' x='417' y='12407'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10000' id='7' name='KPI - Matched Data Zones' w='19242' x='80341' y='12407'>
+                <layout-cache fixed-size-h='171' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='305' h='76852' id='12' is-fixed='true' name='Attainment V House Prices' pane-specification-id='0' param='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]' type-v2='color' w='9517' x='417' y='22407'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='10000' id='27' type-v2='text' w='89649' x='9934' y='89259'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Methodology</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Data sources:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> Scottish Government house-price statistics and school-leaver attainment data, matched using 2011 Data Zone geography codes.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Study period:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> 2014–2018, covering the years available in both datasets for this analysis.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Data preparation:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> The datasets were matched by Data Zone code and year. House-price records were restricted to median prices, and attainment reporting periods were aligned to their corresponding comparison year. Records without a matching attainment value were retained for transparency but excluded where both measures were required for comparison.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Analysis:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> The scatter plot explores the relationship between average highest qualification scores and median house prices across Data Zones. Year colours and trend lines help illustrate patterns across the study period.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Limitations:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> Attainment figures are based on overlapping three-year reporting periods, so adjacent years are not independent observations. Data Zone averages can conceal differences between households and individuals. Missing matches and extreme house-price values may also affect the results.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Interpretation:</run>
+                  <run fontcolor='#000000' fontname='Benton Sans Book'> This analysis identifies area-level associations; it does not establish that higher house prices cause higher educational attainment, or vice versa.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='28' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone forceUpdate='true' h='11666' id='3' type-v2='text' w='99166' x='417' y='741'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Scottish Housing &amp; School Attainment</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' italic='true'>Exploring the relationship between area-level attainment and median house prices, 2014–2018.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='10000' id='6' is-fixed='true' name='KPI - Average Attainment' w='43366' x='417' y='12407'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='10000' id='5' is-fixed='true' name='KPI - Average House Price' w='36558' x='43783' y='12407'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='10000' id='7' is-fixed='true' name='KPI - Matched Data Zones' w='19242' x='80341' y='12407'>
+                  <layout-cache fixed-size-h='171' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='66852' id='8' is-fixed='true' name='Attainment V House Prices' w='89649' x='9934' y='22407'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='305' h='76852' id='12' name='Attainment V House Prices' pane-specification-id='0' param='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]' type-v2='color' w='9517' x='417' y='22407'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='10000' id='27' type-v2='text' w='89649' x='9934' y='89259'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Methodology</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Data sources:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> Scottish Government house-price statistics and school-leaver attainment data, matched using 2011 Data Zone geography codes.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Study period:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> 2014–2018, covering the years available in both datasets for this analysis.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Data preparation:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> The datasets were matched by Data Zone code and year. House-price records were restricted to median prices, and attainment reporting periods were aligned to their corresponding comparison year. Records without a matching attainment value were retained for transparency but excluded where both measures were required for comparison.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Analysis:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> The scatter plot explores the relationship between average highest qualification scores and median house prices across Data Zones. Year colours and trend lines help illustrate patterns across the study period.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Limitations:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> Attainment figures are based on overlapping three-year reporting periods, so adjacent years are not independent observations. Data Zone averages can conceal differences between households and individuals. Missing matches and extreme house-price values may also affect the results.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Interpretation:</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> This analysis identifies area-level associations; it does not establish that higher house prices cause higher educational attainment, or vice versa.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EDE9A5AD-442F-4A3D-AD08-8CD9A48885BA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:Measurement (house_prices.csv):nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C3F379D-593A-40C7-9FE6-EAF25E60BC8E}' />
+    </window>
+    <window class='worksheet' name='Attainment V House Prices'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:DateCode (house_prices.csv):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5aiq917qmz1o123gfz90s8aa7x].[none:GeographyName (house_prices.csv):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5C9759B8-AC9B-4E03-8542-AEC12E7875D7}' />
+    </window>
+    <window class='worksheet' name='KPI - Average House Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D063569E-A657-4A43-AAEA-42330ECEAF6A}' />
+    </window>
+    <window class='worksheet' name='KPI - Average Attainment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8102F3D-A326-4AEE-A36F-81A1916AA49D}' />
+    </window>
+    <window class='worksheet' name='KPI - Matched Data Zones'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A59BEB1-1F2D-4192-BB81-09AAA411A0D6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Attainment V House Prices'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Average Attainment' />
+        <viewpoint name='KPI - Average House Price' />
+        <viewpoint name='KPI - Matched Data Zones' />
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{A047C5DC-591B-4813-8E69-4732DD6275C5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Attainment V House Prices' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nOy9d5Be13Xg+bvvve99OXXOCd3IicgAQYIRFCmSlkSJkiVb8lr2WFrbtZ7a
+      mtqt3Zqyq2ardndmd2rKOypPyUkjSxZFiaTEnAAQIEAiZzQajUbnHL7+cnjp7h8NggABUGiS
+      IAni/arIxvfeuffF8+49955zj5BSSlxcblOUz/LgUkrmq3/zkb/Z9d+u8jfzGXzaz+wzV4D5
+      Ytv2vOQdx7mp9d9u8jf7fn4ax7hc/jNVABeXzxpXAVxua7QbEXJsk7GxSaLRMAVTUlkWYXpy
+      HNUbophNEorGSSYS1NQ3UsomyZZsvIqDo3oxC2mCsUr8mmR0YoZ4NESmYFJbXXmzr83F5Xdy
+      QwpQyiWZTpeoqa0iM5kAGcIwFYz0OP5YjOHz56hsXUhiNoltFHBsG0tVkcUEariG5MwUhqYS
+      DPoYHJumIujFsCWqnF9fD+b6h5ZlzUt+PrbGR6n/dpKfr5E63/78e2U+rWd2QwqgqB6kmSed
+      yZLNZplJ6thWHo8/SD6VJFJZRWJqglA4ghAS0wEdE6mHKGVm8AfDCEUynUgRDfrIWQ6VqgBH
+      QQiBEOKGT96yLDTthk4bKSVCCFRVvSn1347ytm2jKMoNPzPLslBV9YblP+1ndkOlvMEYq1fF
+      AIjHYti2Q3k8fpWcbdsfeuJlldVX/J7/t8HF5ZPlIxjB19fO+Witi8tNQ0rsZBJzbOx3dqVu
+      vN1wcblFsKamyO7egxqLoY2N419zx3Vl3WFQly8c1vQ03vZ2/GvWYE1MfKisqwAuXzi8ixdj
+      zybI79tLcNvdHyrrdoFcvnAIRSF03303JOu2AC63Na4CuNzWuArgclvjKoDLbY2rAC63Na4C
+      uNzWuArgclsz73kA6ThYtgM4KKoHxzJRPR4s08Sj60jHxrYlipBIoSJtC9XjQQCmaeLRVExb
+      onvcKQiXz555v4WDA334QhHy6QxCEUjpIC0Tqfkoq6yikJqhYNp4FIl0HGyp4PUHCeuSqVQO
+      KQWKgKbWFsRF3/L5uENLKeflY+7K3xz5+T6z+QbGf1rXPG8FsApZjFAZXo8glTMIhv3ksxmC
+      5VFKpRK2lCiAFArSMVD0MJZZwpACXfeQzpUI6ypSwnu30F0Z4taRf++DdaNlPur9/7SuWcx3
+      XaBsOkXJlnhVgccfxChk8flD5HJZBODz+zAsB4+QOIqGYxTx+PwIJPl8iWDAS8GwiISCl74k
+      NzMgxnEcNyDmE5T/NAJiPs1nNu8WIBSJErrst9czFygTi8Xe3+a9TMD3/g9dn/u3R79cwMXl
+      s8F2bHcUyOX2JVVMugrgcvsS95e5CuBy+yKEcBXA5fbGVQCX2xpXAVxua1wFcLmtcRXA5bbG
+      9Uhz+dwzm0/wxrlX0BSNR5Y+js/jv6Fy1sgR7LETeBZ+CSVSd00ZtwVw+dyzf2AfddEGmsta
+      OTl6/IbKyFIGe/gw+opvYJ5+5rpyrgK4fO7JFNMcGniXXx77GY3xphsrpOpgFrDHT4MncF0x
+      VwFcPvcoQuEP1v8x65s2EdLDN1RGaF48a78Hioq+5g+vKzdvG2BibBg0H8VMCqHpWEYR3esl
+      XzSorW+ikJoi816CDKFiGSWCkTJCumRkcha/z4thOrS2Ns/30C63KQ8ueph9fXtYWbuasC9y
+      w+UUfxylccOHyszbHbr37ClCtS0kx4cRikY4HiExPERlczuOBKuYQ9oOUlWQpQxKsArHyBHU
+      FKTHw/h0moqgTryuEVV+tARqinLjDZcr/8nKzzeAab71z6eM5Ti83d+LYVusq2+kPBCcd/3z
+      VoCp8RHylkLQA6ovhJFPE4zESc7O4vN58eoaBcNBVxyk6sUqZPCFoig4zKayxCNBMkWT6spy
+      pBsPcMvJf57iAXoTM1iOQ304zKGRYe5pa7/hc3rvmuetAJ8kbkDMrSf/eVKAgmnyVl8PCrC4
+      sprmeNkNn9N4Is+7ncPuPIDLrYvf42F7+yIMy8Q/nyArM8+OXW/x5PYN7iiQy62Nqih4lPll
+      JjKP/nd8/hDH3/yFqwAutyGOxVfvWUHA53UVwOX2Q1vxJPS8yvLND7o2gMvthwhV47k4Oea2
+      AC6fKyzH4fTEGNO53KdyPFcBXD5X7B3opSwQ5MjoEAXTvOnHc7tALp8pUkp2HetndDpDS20M
+      y+8Q0nU0RcGRHz+VupPLkd2xEyUSIXj3XYgPzDC7LYDLZ4ojJROJLN95cAX9Y0m2NrfROTnB
+      wvJKgp/AAmqjrz7PjvgEk3YSo+cCeSNHppS+tN9tAVw+UxQhiAS9PL2rk6p4EJ+msamxeV6z
+      99cjW8pyotTHPcW1nO7cQ2DBQnafeQ5d0Vlas5xF1UtdBXD5bBFC8MimDkzbwaN+sh0SKR3e
+      Dk1yYvw3rFi/iTEtx+r6tVQEKjk0tN9VAJfPB0IIdG3ui/9Juqb1THfz7XXfw6PqXJg+z/La
+      VbzW9RInjWN8aeljwEfoAuWzabJFC2GXsIWGsA1C0TjJRILqunqMXPpSPIBUvZiFDMFoBT5N
+      Mj45QywaIlMwqaks/8Qu1MXlWiysXMwLZ54DYEvr3XhUD48u+8rH8wbtPnuK8rpWIl4Ym0zh
+      9XuYHRmivLkdx5HYxTyOY4OqIItZlFAVTmkuHsDRPUxMpykP6sRrG9x4gFtQ/mbEA2SMEj0z
+      MyyqqCTg8Xysa7CTSRTdiwj4L52vRKII5Zry824BvJqHZDqDowvq6qoY6O8jEC8nMTVFOBIF
+      4VCyJLo0kB4/pcwMvkAYqTrMJFKE/Do5w6ZKESCVm+4OLYRw3aE/QflP2h3akZJ3hwbY0NjM
+      oa5O7mlfiBoIfKRnVjh1mt++8C6FukaWrV3ChhXXjjr8WPkBmjsWX/G7bUEHCAFSYtv2dU5c
+      IASUVb7f2AgBzmcWieDyeUMfGiZy6AiZ870EtmxGbWiYdx2zvQP4t2zmKxXwi73HWL+imf7Z
+      BDmjxMLMWeTUWbRFj0Ck8VKZj212CyEQF/9qmnbpi37lf5fJzvOL7/LFRhGCzU0tDJ48ycIv
+      f5nAxg2Yg0Mfqa6q++7GmJzi5y8dYeGWOxhNJZnMZojIEumJbvQNf4Z19oUryrijQC6fOXF/
+      gMAjj3Dy5z9Hqgqrv/Odj1SPFg7z9W/cgyMlihAMp1OoQoDHR3J2kGj3K4jAlVFjrgK4fC44
+      npim/Q++Q9Gy6JqdZWXtja3+9kGEEHMvPdAQiVKyTJ7rfIX1i+6ja+IUD2/+Cy4f9nFdIVw+
+      F9SEI5wcH6VzYpzK4I2t7vA+Eic5gLSMK7YKIWgvr6QmpLC5/X7saBOGc6WDndsCuHwuaIrG
+      iPn8KAICmmdeZc0Tv0DzhbETfXi3/CVCvbL8hqbNPP32f6a97g58mh/bfn/43W0BXD4XCCGI
+      +nyEPooDXCGBtvT3sL1RDvV1XeVG3TDTzyMjSRYeeAGZnbpin6sALrc8aseXyO/9Wy5YPjrq
+      F7Cn/8IV+82BE3g3/wHeO76ENXbuin2uArh87pFGDuPUr7Gne5BS0tk/xVvH+7HsuXgBpbwd
+      z5a/ZLRiDVLC5YPs0jQxxiPknvk/yL74U2SqH5kevrTfVQCXzz3G0Z+iNW3C6n6VoeER+sZm
+      aayM8PqhuS+9kxyEM8+wriJKz8w0d7UsuFTWKRZR4rXE/uoneDta8Sx+APP0s0irBLgK4PI5
+      wLIdBsaT2M71IsAEOBYw59riOBLbmRvrl2YRp+sFtJa7CJ/9NRsam/B73jeC1XAYrbqa1DPP
+      Ivx+sK0ranZHgVw+U6SUPLXzNM3VUd7tHOab9y67SkZf+z2s7tfQFn+Zhng9eWeaydkcD65r
+      A2kAEhwTxLW/54H16wisX4cspjF73sSz4hsIzTs3YXaTr8/F5UNxLs5KbVneiGle7R0spYOT
+      HkHr2I4Sb0WmR+goh60rGlFVBaH5UJd+FXP4CIXybaTfeAM7k7nmsYQvgr78a4hwLQC7+3rm
+      3wJIKee8LIFL/xdibpuiwOX7LzrJvef78553ppRy3ktmu3wxURWF1e01/HLnGTYuvdoBzjz5
+      S4QexjzzW7SGdWTGe9jblWD5g9+htXEu75eI1HNwKk/5Cz8jVw+tz/ZR/t0/ZSafx6dpFC0L
+      n0cjqHuvMJANw5y/AowMDeDxh8mnZoiWVZJITKEKgekIqmobKCQnyZYcvKqDg8CybAKhKGFd
+      MjaTRtNUHFvSuqB1Tkk+QgTQfMq8p7A3q35X/uOXWdZSybKWymvKO9lpvJuewMnNUDj4Ei/a
+      W9mwuobdO9+g8snfJ+ib6+9n8ikWh8bJ1D6O1f0iZ6ceJ1koMJRKUhkMYdgWmxqbGUh0kSmm
+      2dy6ldWnO+evAEYujRqKUSiUMCYnCUXDpCfHidU0USoWsVHwahIUD8LI4Q2UYRlFDKkQDgeZ
+      SeaIBzzYEpSLRs98Ayzmu9T2zar/dpa/kTJSSsYzaaJ+PwGPfl25yewEx4cPs65pE3F/2RXK
+      oi19nNKBH1M8n8C39tuk9+0j35Og067HtEo4jorjOGxoa2fihIea0UFGfFHe2NfFgpYYQoX6
+      cATDtvj5sX34NZONDY283fMWq0xr/hFhycQUeQMiAR2perCKOQLhGOlkEk1T8fm8FM25BBmO
+      omOXcngDIQSSTCZPJOwnV7Qoi0Xc/AC3oPx8AmIODw+BdJjIZbl/wUJ8nqtdHBzp8NTRf+GR
+      pY/zSufzfGvNd6/5zPLv7kf4few+/ipW1Z306Gf43pYniQfKLl1Dabaf7uPP8NMLdVQ0FchM
+      1bJoaSX1kSj9swk21gW5cH4f/op2ggGddaLp6hbAMgqcPHkaWwoWLFpCWeRKx6RYWSWxyzcE
+      5zLwVVa934Rd4ccXfP+Xzzf3b6/vd947ly8AyWKeLY0t2JPj5EzjCgWQUmKe+hV2ZgxhFskb
+      +Q9VKv/GDRRPnGDliq3808xrrK1bz9sXdvH4iicuyXjjLfSUtVI7W4GmFRgz0mxuWk97eQXn
+      piZxjv6EsBKhfXAn9dv/GkXVrx4FSs1MUN3YTltjI/li/hO+JS63Exsbm9k32I9X1QjpGs+d
+      fJrnTj5NySrhzPYjNB++Tf8j90ubC9PdPLL0K5wYG6VzcuIqm0EKweyCNoJLV7O0ZjkPLHqY
+      glW4QiZdTJExZkmouzBzSf791x+hvbwCgIUVlQhjnMGQzsF0K6d6xpFSXt0C+DTJa6+8gGH7
+      eeKPvn4Tb4/LF52w18e9rQswO89y/oVfsGnVesTShbzb9zbbWrZgnn4GWcoQr1/LXQvu5cTY
+      CGGvl7xR4sTYABem9uNRPHxp6WMcGp7bdzyVpCXewbMnfs2W1ruuON5rXS/x2LKv8qbnVR5d
+      9jj+yzLKZ0ppBspbifULMjGDsaRBbDJ9tQIUbQ8LFi1CCMFI7yCLF7jpTF0+HqXOTqLffJJz
+      //hfmfaNsrHlToQngHfzXyBLKZRQNQAeVaVgmhRMi+Mje/n6yoeZLSQ4OnSIrFnOhoYmJtNZ
+      Dp1wCHmXka8MQfz946hCJVNKz636cGnoHWbSebIFm6QvxkgwSDxQTipX5M3Dvdc2gt/bdLNj
+      d10j+NaT/yirQuRefAk1EsaYnUV/dDsh79XJrs2xcQrHjzPS2oxeWQlylkOD73Ju8iytZe2U
+      R9YzmMwQtP0oUrB9ZQd7jg7y9XuWYpVK5N/cwUQqxU+MJA9aHtbU1BL+0kOMJQu89s/PIavi
+      LFjQgLe+QC5Zzu4TI/z5V66TI+zU0f28/srr5Oa/bI+Ly1VEHn8M34oVxL/6VULeMBOZMV45
+      +wKTmQkApOOQ27WL4JYt1Bw9TkssjldW09fn5zur/4L2qm2EPBZbW9rwhRSsnOBvX9jPhiX1
+      AJS6u/E0NPBupJ3fPzPIhfKF9OhFTux+lvFECqU2Qu3aDva/tYeCZXN4+iSJXIFnj52+tgLY
+      jkO+UOITXqrR5XZFCLTKSoSiIKVkR/fr3Nm6jTe7X71CzE4lQQgs22Hn0T6+e8+9/OyNo+w8
+      0MueQ0mmUjkUVbB9cyuN7QYHxl5iJjeNNEymfv1rku/uZaq2ntMnDvHsqUn2zOhMWafRgnHO
+      /3YPocYgfSkPgwMqf/nV9YwO5q+tAB6PTjgSRrjr9rjcBASQLMxe6qcLRSH86Jcxh0eIPPbo
+      XPdKgmGo2EaIP3/kLu5Z3UYpI9nevogjw6fZ2FDPl5d+hX19u8l0dtL77SdZW1/kdMtCqhYu
+      YcF6D0qsiF0o52uPbkG/t4OW6AynD51EKWn85uQZAgHtagUoZROYUsPnD+K667h80ggheHT5
+      VxlJDfHosq9e2q5GIgS3bEYJBlEVweNbFzEyneFPH72D51/fS/+pbjaKHL6xcba1LufsxAl2
+      dL9Ga9kCfNVV6IeOoDh+ZoOTxKsLdA0oDI/ZqN4MU7ksS6b3czpXwwrvFNuaLI4cGmZpXcW1
+      jeC3Xn0BLVbPpk1rbqq/tGsE33ryn0am+NLgIKrXi6e6GmvwXZzEALm33oDIUozRIqH77kNZ
+      WkcxM06sZg2WYTAyOcX+sVnWdTRxbLwTaUzSEavBmDlDvvxu1mRP0ztZZG93kmPTOrGaSvIl
+      6+r328hMkDEFq9o63GABl5uOlBLMPHgCCCEonemk+2gnh5LQsGox95aNotSuwXGOEljUgLQz
+      GF378GVTeHNTJPv+M1bOw776x3CCWV4438Pd92+mzFuJeuQn1C16hImhN9k/GqZt/Fc8WIwz
+      qNxFTVUVA73TV3eBHNNE0XVOHTrCzU9R5nI7I6XEPPYzjBNPYZ58GgBreoojRPn2A8vJnTlL
+      qu4+nLFDBDctJdWZRkSj+FpVtObNaB1fgRUrOPXgt5lKDtC64X60QJhF0Qg1092EJqboe/0I
+      6ZFT6Kl97GpYR1bxsKQsR+fRM9Rnxq4xE1zWwPZ7KijZ15gmdnH5JJEOVmEWbdMPkPv/GwCB
+      LVuoT73L868eprRkObFoFM8df8DxsRGmqrMI4J7KrRg7/wOWppM8NUKTNUDN8mb27HiVrUs7
+      8Of6OdF7BGVWwxPbwchAE9VVUzw8NYJWypFv3UoyqVARvE48wMF399DXN87vffe7hD/QfU4n
+      ExRMiTQLeIMR8ukkwUiU1OwsNQ1NlDKzZEo2PsXBeS9BRqySgOYwOpEgGgmSLZrU11bf7Nvr
+      8jlnIjtBfyFB8IW/om7BfXgB4fFw/6NbyeRNgn4PHk1lPJPmnYE+WuPlqIoga/tQ23/Av0y9
+      RmRtmMrENJo9w1fuehjfyT4y58/gRNJ4hAeZqqVeTuMtjjNhRTmm34t6KMF9+iH+SX/o2gpQ
+      39DEyGQW3zVGgSbHRojVtZFJTWPZAo/fz1jveapaF5FMprBLJaRjU1AVZHYCJVxDenYaS1MI
+      hf2MTCaoCHoxbIn6EdJgOo6DZVm/W/Ay+fl4fH+U+m8n+fkGGDnXDXSHkyPHWb3hhxi2wfHJ
+      LjaVinhVDcdxCPk1QJLIzvBi57vU+uOkigUCioLzyqtMNUTY2O2wr34xqcQZNq1eh/eNH6E8
+      /L8y+JtzjM7AQL2HjH8rj0/9gmD5Zl7s9FMf0hF3LyRzaJxoZe21FSCXTVNfXY3hgOcDLYDP
+      5yeTSRMMhjGloJBJE6+tZ3Z6kmAogqoJTENBlw6OP4qVTeAPRVAUycxshrJIkIJpU6UKpOMm
+      yLjV5D/JUaDNrVt5+ezz2I7Em9M5ce4/sWDNE1TULrr0zHb2vE6FXMqhM4N4FD//88Y40jlB
+      Q+sf0vv8W4zMVBAtBXhr5ymCsSz6j35EsjJK1A5BSUdUR8kUahnoyeK3TXrGPGQSXTy0WGNZ
+      8ei1FcCjafQP9HLHXVfva2htv+7F/q7UNvHyD4S9XVfS5XYg7IvwzTv+gJlsmuze/0Js2w+Y
+      fP0/oUUeIBBx8FT5KbcNDo9Msrq9SPFCityRFxnxLGT42acYq2ujvWEB/lOjjHjKOR3bQIX/
+      AkPRk3QMlBHIrCTa04uRhqyjE5IlgsUs1bFhMso2zFV113GFsE18sTjeefrCuYHuLr8LiWQm
+      N03XxJlL3aOyYBh/sIwDO/4O76zB4YZqigf+FSsjWHl+J3eUF8mecmibniCsBjkxPk1ZeReW
+      0k+iby+nK8owa/2MFAIciNWTzSyiqe4sjeE8ZXaBntkokfMqY8Uqxssq0LIK9YEwYb1wbQVI
+      50qEFYfCx89U73IbMTKd5rk9Z+kfT17aVrIs7MtshlwpxxvnXqFoFtl5/nVgbna44s4fonY8
+      ROzuH9L49LMogQClvT/i4HgZI12DzI5PYwRmmOq9gBEx2TO5lFFN8MR6hW1f2oZVV86w3kjU
+      TqIpNudLDSyfeYXw0CQZK0rfsqWcVRuQeYfng3dy5MJpqsPtVyuAVUiTmByjpEfxfvxk3S63
+      ETuO9LF9/QL2nBjAdhzOTk5wYHiQN86fw7y4JHnRLBDzx2mr6GDf8QQ/e/0kgxMpFEVlcfMS
+      juoqwQUd+O78M+x0nnF1MWsS79Cf8XCytJK9+nYGqstpaphkVXSWfxxs5ODR89zX2EhIC9Or
+      tfB2ZilDkQ0U/ZVUT8+SK3k5nAmScvwMRKoxshrBUDVZw3NtG8AySwjVnQVwmR+qIhicTAEg
+      EAylkmyoaaQ7OU0iOUEkFCMeKKc6XMOzh19l28ItbF3ZxK92naGpegX1kSh14QhmtIzCW7uR
+      sYdZ5VN5o7SdsG7QWpzkQusdbGgJMjhbz8nzh3lw0TIaqwIM732HJrycCDZTb06RHTVJZuop
+      xIPkPRaymEETXkrZIl+OHuUOs4ey/unrB8Q4joOiqtzMkBjXF+jWk/+wUaBCyaSzf4pFTRWE
+      /DqvH+vhWN8oVmqSR6t6CMg859ueYPviFTi25Bc7ThMO6DRWRVm/eG6Rq0vPTFEwJybJ7tiB
+      Z+NGfrrrMLXVjeTrvWxf3M6P3/l7SlYlYwNe1oUDzAwMoxlZeu0wS1JJVFWwLX2Bg5FyzoYq
+      mDTK8XkKhP0afx5/momOr9GY6kT9m7/5m7/54IW8+/YuxifT1DTU3tS1E98bpvykEy9/8Bif
+      p0TTn5W8lJJsKYOmaNdNGn0jfNgz82gqdRVh9Itj5wfOjPD9B+/AHjpBV/la7q4Nk5Yq/lAF
+      2tmztM0O0X7HEtqaqxhNpzgyMkzAo6MNDiJzOfT6OnxLlmCcOE5h8hQdif20Jc7gnUqiTL7B
+      EiHpkR7CIymMQIFvlHeSSxdZF+pkA73o04KTwXoeC+/jhNPMXb7TLBbDNJMkm7M4PFt+7fc7
+      Hg0zPT2DawN/cdjbu5s9vbt47uTT2M6nE+q3dUUTT+06QzayiIfzu+ge6cUI1hHNF7DGJ4hu
+      uxv59m4cKTk5PsqmpmZ6976NPTZOqescpQu9CI8H/Z6t5GQP9e0t9E7PoPX8A/VJeGMszN26
+      ztq6IUqzCr+aXInP5+CfiFPIBfDEczQHetmfW8ZW/RyjuUYmlFY67eXscTaRWrH12jZAMpth
+      amgQwwHdHdn8QjCWHuEbq7/Na10vkS1liPpjv7vQx6SpOsq3719+cSJsPbUXt9vZLHYqhdHb
+      B6EQMDcnNJpOIzMZ1HKwRndiygaKNT8gFNAZi2/kqVP9tFkFUkJy2FzOnYFenj8XZlWVzirt
+      DLLFoCMxht7qYb/VTtbw0ZabpS0yyjHvUpoY4MHiIP+au59oIMiqqmt4PJeyCbz+GOHKSnQ3
+      n/UXhjsa1vKr4z+nKlRDxBe9KcfImwaHh4coCwTwqhplgQDRD+T8sm2Hk2MZ0i3tVOQyDDXV
+      8YCU3NXSyqtde9h8/50kfvt/kii/j6PTeULvHgXbSyRVYHX9OG+n72ShtpOhqQhL6GOZ2k97
+      ZoClwQEmh2KMexdz1ghxttTIH1bv4ufKdrR8kVxOZ4oAnbQRaGricd+7nN+z/xorw1kOY2Pj
+      REIBtwv0BaKjcjEdlYtv6jEODA6wrqGJHRe6aYjG6JudYWN9ExH/++vzvLz/PC21cQ6OFPjh
+      IxvJzYyTKhY40P8my6oWsKv/KKsXriFx4WXMVDNafZ4LBzWc8hDFsQZCgWkOKyvoLUX5f8yH
+      +Ka9j16njRPmQgJlGqmEl9/zv07e2sZbM8uI2jOUFJ3l+ijHzQ6+Fj9LupAg0fgQm/Tuq22A
+      YKyC9uY6VE11Y4Jd5kXQ62UwOctULkt9JErAo2OYBtkdO8m88SbStsmXTBqrItTFgvz3QzsY
+      TY3SO32K02MnQYmQMoJgFfEHFGJqmjOnYP2SBjauaGRbeIwvN2Xp1lfwzUAnm+UMs/4oyUCI
+      2qZmDg7XssDp48fJx0jaQfSSh4pggaQdZF9+KbFCifODtZy2a4gMPsXQ4OFrG8HZbJpMKonp
+      KoDLPFhX30hQ13l8yXJ6EzNUhUIEOrvQm5vQF7SRf3c/X968kD0n+kna5/j+5nuZyRwjVUjy
+      x5t+yFOHd7EsGsI63UtVzxBx7wBryy8wmDzA9P5d7OxYiBWqwPFJnreXcDxUS221g+OEOHXW
+      oFJNEVByLLVGaSklGXLCnErV0yymuM93jLCeQwiNJ6xdvFEK81x21dVdIMcqYdsOeUe9pjt0
+      MjFNyRZEAyqJrIVdyhIMRUilUtTWN1HMJsgWHbyqjaPoWIUcgVgFQY9kZGKGSDhIrmjSWF97
+      deUutzSKELTEywCoDoXJFNO8nTjKukQDXo8fT1MjPr/OY1sW8cK7B5l57hnqyDKjT/P2iQF6
+      T3uZPjfGYu8qvr1Y0tsdoVAWpdVXoKbsDCvHdArFAtv8XRyrW8SM5vDOdD0BzUDzZyinwD8V
+      HuE+/1EKUpI0/DTaSbqUeuIpCytk87XATn5s3Y9IKjwZe/0aNkAxw9DELCF/GHkNI3hmYoxI
+      bQu9F3owpU5NQxUTA71UtS4ilU5hl0xwbEooyNw0SriGbCqBoylEI0FGp5JUuvEAt6z8fOIB
+      Xu96mXvv/hY9p98mqAZoa2nDKpUonjzJymMZXllWy0MzrXjKl/OLwyPcs7wD1YIvNXIAACAA
+      SURBVAMXDp7htbSXBYFxVoaneL47zqKyLE44wrTU2RVYzFJmOKsuZKFxBM20OWC0U6cmqFNm
+      eNdYhpQCXZhMiQg+TBpDw/TKpZy02lA8gnrvBP+Qu1ZAjJQYhoFHl9ecBfYFguSyWZrb2khl
+      ipQyGcobmkjOTBEMhfHoKkVDoAsHJ1iGlZ/FH4qiKpKZZIaqWJiCaaO78QC3pPx84gHigTLO
+      z3RxJC2pDcQ5tKuTx4xhzOYGpgsFvqZI0mMvUTWW5KtbnuCpnWfonRxipdFFQyzHy4X19F84
+      zX2b6oidUzgnVFIZiZmV7Pa3kJ4psrewlHZ1lDt9XezNL+dB32EOOMsJkqNGJDhttbHdc4rB
+      UgtlSokX1bWowqRSzGI4nqtdIaRtkcpkEUIhHI3Mayb4o8xauq4Qt5b85QogbZviqVNoFZV4
+      6uvgA8/RkQ7nJ8+x+9AsX7tnIce7UtQd2cv4+mXY7x5ggb+T1Ja/YJnVhdawjhPZCbp27OZ8
+      KUB8vJdJvYwf6HuwvRHGZuBIxMtQ5G5SxTTJ8RgLxTgJGcBwPFhSxbE82Jpks/csx61W0naI
+      f6O9SSxc4Jf+xwhP9jElo0REjhIevhe8RhdIqBqx2EebJHHjAW5t5pYtfI2Z/DTLalawvHbV
+      h8rndr2FVltD/uBBgtvuRisvn6sHyfnJczjSpr1sIbnE0/z0qREEWdSt61g7OMLZxQtxYnUs
+      Se1BWgZi6WMUEn2swEvnkEowGaAxVmJ225+THZpEjB/jPrp4fewCBVFNjZ4nY+iknCCLrQnK
+      gmmGzSgh22R3YSWtnlEsofIreTd6Lk8+laffacGWKgkRplGbZNi5ua4+LrcYmVIa0zF5cvV3
+      6Bw/fdV+R0q6p6cYz2SQzGVhV8srUIJB7FKRN8+9yqtnX+TU6HHG0qMk8jMcP/E6hp7g337/
+      62wuDOAPhxlas4pisEBVcRS1fh2ZpX+EFCorZ4M82wU9dpCRcBWGGmb40Du8mQhwXI/Sl6wh
+      lC9SU5qhujTBeq2bb4R3Ew0mKJezzJgxgkqBovDgwWbGiZK1FaJWlho7SUnqaMKmhM493hMc
+      TS10FcDlfULeMCWrxG9P/ZrG+NV5IQ4PD6IqCl1TE8zm84QeuJ/iqVN46mo5aQ7SGGtmbKiM
+      f3rlCF67kXignGLETyhV4uiP/286Nm5nQ2MzUa+X1eljhFY/yTM7T3C4e4Lf7u3iZNIhUd7I
+      Q0t0eiw/7cokx2brcJL9TNsavza3si12kg1OD9UiSVZ4mSjF+ZLnEC3aGG3KOMlilKAoctpq
+      ISQKGI6HHquePqrQhUlY5AmJAhQjxHzXSJDhcvuiCIXHl38N0zbQVe9V+w3bJuL1MaPlMB0b
+      JRAg/OADAFTMXODtc0cYy5r86Zc38tLb51nfMIQ4N0agpZql2/4I4fUhhKDOmqE4dZr0c3/O
+      5HgL9WviTMy2UFYeolkZ52gn+MssvGKcQN7H8Xw9VUqRBeoY/1/qUUadcpBwPydIKAH+eeZx
+      osEE1d5p9oul6Jg4CNJOAAWJXymxTB2i02xG02wMqfGCXEaNMzv/LJGfJK4RfGvJG7bN0ZEh
+      yvwBOioqr3huEsnB/v08s/scMX+MB1asY/TcETraV7D/ty9zX61KcstSojk/+uGnCOgxJnxn
+      GVU38FqfzazSRrUziRWqZ7HnOMPNNhWswff6ASY8QY6qjTSrY/RZtVSrCWadMLZUUIRksTKM
+      rpZYqV/gX3MPUJBeBBIbFSkFEggpRZZrfZyzG1ird9NtNvLvvM+4XSCXG0dXVdbXN1718sNc
+      BNhwaoC//ubvs2phhOpqE0OJor/yf+FRpngqkWFi7yv07nqD6u/8e0ojRwlO9CH1C4SQbF7t
+      x7BhMneByZkSm7sKLJ/aTyIECVXHRxFNmBhoTNoxSlInrORpVicYkWX0WbWczC/Eg029Oo1E
+      4MFGIIkpOSyp0G01oGETUvLkpZdzZqPbBXL55GgvX8Jf/+KXREMKTrGS9onjHFn9PcZ372aT
+      MkBXeAMVoQuM/90/IkP3cMo6y+o9GdLGNPv9Nv25INv8w/Q6ZRyorKGu8zj9dgtrfOcoGRq9
+      Vj0KDgJYqfcgpcBEo1abwYPFHd5znM02MGLPZYYUOAQVExWbEgF0TMqVFIfzy3gy+BZdpRZX
+      AVzmj+04HBoZwrRtNjW1oF/sYtaG2rl3sZeHNnTwv//8N6yPlRM/8Srj/hhnYio94xPolU2c
+      bYniTczQfsThzBNPUrN7L39ZfoqXjWkGZDXLZwZ5vaecKkWQkjrvmIvI4yMqclTJDAOigkZt
+      CoFkR2EtCEnWCXCwtAQAISRVyiwJJ0JAlPCJEtKKUERnxK5EVRx2lNZgSs1VAJf5c256kppw
+      mLDu49joMBsbm8mbBkcmBulOJBh5NUtZjYanYTmjcZug108d99N3cj9tNbOMjZewymrJhOro
+      3HkWy9fAglw/sbxKoxxntjVOe3KaXcZivNKiIH183buPYyxg1IxTq86wyXuGX+buI65kmHRi
+      KMxlhnzPoJ2wyxBC4hMGI1YlQkgM6UFiEZc5RmU5cZlzjeCPU//tKG/bNpO5HGenxtFVjdpw
+      hAXlFRwdGaYhFsOnaZweH2M0PclA536s3hK27lC+Ksb44Sm+nu3iv4i72RLoZn/lCuosP/na
+      XsyhMN/n57zG/RiKj1NTZdjEsEs2PmFQqSbxixLTdhT7oumalz4MqaELi7z0Ii9zXhNizpWn
+      TEmTcCKAxJEK5WqalBPEJwxy0ue2AC5XYjs2x4YPEw+U0VbRjkCQLhbxahrei4pSEw7j93iw
+      HYeyQACA9ooK9vb3ArC2vpFFFVU8dWgAj5FgMmPyQNuDnPaW+G9vHUD1jVCdn8QaKzFZyFM0
+      6lhanqTb7mBzGDoHcti00VCapJ8KNGxGrApU4aDiEFCKTNtRqtQkM3YETVggvShi7iUHiYaD
+      KVWSTggVG1N68AiT+31HeKe0nGqRpNNqdhXA5Ure7t1FdaiG81Pn8Go+sqbOVC5LplTi7pYF
+      +C8qQeyyKC/LsegcO8KSihrqos282dNNeSDAWFbSWGlRSOoYew4ylffxH1ZF+fH+AbKxGG3O
+      AA94TvNPyftYPnSK5aFhJiMedhXv50/UN/klGzBRScsAtlTnujcSCo4XvzDIOH7qtBnSTgAP
+      c+P7cwhMqaIIiSVVhJB4hYGBxs78WuqVWc45TQgp5j8M6lgGmVyBXCZN0bDIpFPYjkMylUIC
+      tlkikytQKuQolEyy6RSW7SClQzKVxrYM0tn8x39SLjcFy7bwewLoqo7tWIxnMqyvb6IlXsZM
+      4drPbce5V6kKVXNy9BhDyVHKgwE2NDbjqY6iDeYom8lSfe9dKLbFkSlJtLKShO3nbK6D3+Tu
+      5OtiP+cDNThhBy2fpM0Z4ufGZixFwS8MNGwk4MVEF3OTXF7LwScMso6PpBO6ODY0hxASVTg4
+      8r1s8QoGGlIKPKpJXmjELYOF8hoZYn4XPT3niVXUokqDxPgkPr+XscEBAvFKTKlSysxiOxKh
+      AFYRPCFEOkdIh5zpMDYxRcir4Q80IS4ujjrfdYFs+8aW9XjPBpgP86n/iyh/V9u9vNv3NhWB
+      SuojjUR8Jd66cJ6grtPRVHEpvuLyZ2bYJrrmRVU0gh6NmbzBq12dtLVWMGJtobqYwDl8kIfT
+      F0g0L+G8E6bKmmKTLrGRlJFDkRahUgZDt+hNVqDikJMBQGJKz9xf5hZqs1GYVoNEZQ4bBcHc
+      l34OicC5ZCe8x3v2wbhdhgA8XknC0edvBPecPoYTqSamS6YTaTweBcc0QfMTicUwCmmKhoOu
+      ShzHxpEqHl3Hr0EyX0I6oApBa8cClIuHno8C2LY9L6PWlQccCyczhhJtgA9Eecy3/msNXJi2
+      yTt9e6iN1rPANrH79qA2beSXZ70EaxxeO3yQRUSJaVE2ZZ/lN+PV+LUSfXYtA0Y1AkmVOsv/
+      oO6kX69gV34VIBmzy0FAUBTJOT4QICQowrnY1//gEvsX8w4LBymVS3/fQxEOIAmJAiYaFUp6
+      /grgODZSgpQOQlGRF0dZbNumVCrh9/vnvhCAFAIcB3FxiUXbtlEVBVtKNFV1R4E+BXnp2PS+
+      8r9wJp9gU+1Kqrb+1YfK247N4aEDxP1ldFQtQlxDYa4VECMlnLgwzviRf6V681aWDO3nbc9D
+      HLhwhL6RKdZ6R7l3ZTXvHBjn4dRBfqQ+REb6GbYriZCnWqSIyywdnmF2OSsYsqsQzL1HjhTo
+      wrqsj/9BPvj+yIvbLv87R0gpkJM+4k6ezXrX/G0ARVFRVRVN86AqCpqmIYRA0zSCwSCKoqCq
+      KoqqoioKqqahXHzJNU1DKAraPF5Il4+HZeTweMN8+Ykfk5gd5eTYKPaHdAv3XNhJ3B+nP3GB
+      4dmha8pkSxn+9u2f8uMDrzCeSWI5Fs8feocXTrxMIj/N8688zeGhA0yN9xFw+lltDHCwUM65
+      I93Ek0FC5TM0qZNM2HFUHFIEuSBrQLd5xVlHSeogBVIKHCnQhI24uEiPKt4/d03YXP3yf5C5
+      l79emwIEfmHgwcavFDln17mjQF90FD1Ip1lg/Jm/oNh4Ny1+P4dHhtjYeLW7M8xFcWmKB0Wo
+      yOusDNU50c2Kug2sqavlN6cOsWK4H+HEyVsZjngDLIov4kS8mpmzp4m3dZAfTfFn0QFCyVHq
+      F+nIKUFDMUOtNoMtVcaJ0qxMMeNESNgh5sZ75l7cMjXDCr2X46V2uNgm2KhwRb//PeRlH/y5
+      8mElT1F6mbJjeITJlB1FERJFdfBguhNhH6f+W0XetE26JvvJmBpN0TjDqSSbmlquKW87Fvv7
+      91EWKGdx9bKrno1t2+TMAr/tPEYyP0z6QIp4ZY77lRA7NZVY/UJ6cq+zqHoxdtZH4NAOqqwJ
+      aooz7A2vIj+jURPIIDSbWcPHIWcpfqPANFEsqVCmZui3ahBAUBQoSh2/KFGpJmnSJnireMfF
+      d/vyLs57vPcqv9/tEUJeHD2yKEgd82I3qlUbR4LrDXo7YJ08TePuo4TeepupbIb1DU3XlVUV
+      jTvbtrGkZvl1P0xhb5AlleWcv6Bzf3kM1VlIz/QUv7dhI9/aehf/NrCd7d06q0+/RG9kMZbX
+      w6S5nkDa4FHjDBNWmLvkMRq1CbzSxK8VmbXDVChpRq0KFBwCoogh52J9C9LLgFXDwdISBBJd
+      WAjh8P7L/36L8T4CmOtG1WozGFKbsygE+BQDVdj8IPy8qwBfRKypKbJv7sDOZAAodZ8n+s0n
+      aa2pZWUghPpxYrdLaQZe/nd4D/0dS7wmo0uqSE/NsHLbw1Rkz2J0HaFw6AiRr36FU7GHMULw
+      q9Sd0O5liBW81riNESfOcaeVKTuG7hTZ4j1DlTqLiYoqbDRsqtTZi10cgSVVbKlQkjpSijmf
+      Hnm5cSsuC8j/gNIK6LNqsVGoVhMIJMWLLUG31eB2gT5O/Z9L+VKJ7DPPEtr+INk33iT2+9+i
+      cPQYpe7uuQiuxx694n5fq3578izW+TdRa1egtm67csjz3Ku8PDlNSY8T7t9Bd/hx1re1sfrc
+      fwQtSLrnEE50DZ7hC7wWWkuX6cdWVVThpXHVQiZ2H+H3jH38V+VLFNAByEk/jhRXuDK8z7Xe
+      Dfkh+z4EIUGCR9jUOCkqvTNuC/CFRcpLX0X/mjuIfeubRB5/7IY+Ntb519E3/zn29Hkwc5yf
+      nuLk2CiOlIyIIHdmOlk3tRNa76KtrQI9BIV8CjvWgbdkEFZKZBoe4q72EjJnUB0oUCZTlPXv
+      YAadXb7FzMoQJakjAJ8wAHFp5vZ9rneu4kP2fdg9mRtRchCMqyHydQPuKNAXDlUltP1BiidO
+      Ev7yIx+pCiuRJ/f//hCtQmOs7XEyJYOYP8D+t/6eUD7L1Ng0xp3/hrpYHVmjxKraeoZsQcXA
+      DiwfDA13Ue8fhdI099S1MJSKIzWTX/Vu4I8Dr/J0/h6ClMjhJSP9l3VnPmjYftDI/bhcHDlS
+      LQKNnaz1edwW4FanZFkcGBpgNJ26tE2rqCB0370IIbBnZ+dag3lg5tuI/cn/hq1tRH/pNSoP
+      HMZxHE4MlDh3JsSR2TuInT1Je1mEQH6Cnx3Yha95E0eDC/nV7EZOx+7kdaOZWdOkQU4xUQrz
+      8vQWvJi8VNhEzvFd9OmZe/3US+P5n/QLfzkSIUDx5ClvO8Mfeqag+yM4w7l8vni7v5eO8krO
+      TI6TM4xL2+1UivTzL5DduQtzbHxedeqtbaRf2489m6L2u3+I5jgYuRzxQDvL1GeJiTOcPzvE
+      8d3/kbZCN4/lDxIqayYy3s2sGmJmzGRftpWRYiVeK8sFs5Y6bZoaT5JBqwohJEkZRMOe8xC4
+      NJ5/5azth/K79OSK/ReHRL1J6jou8CfGAIM9cRKaz1WAWx1FCCzHvuig9v52O5FAb2vDt2wZ
+      1vjYNcv2js7yix1neOf00BUL3gY2rCf2rW8S2LSJ1NO/IhQOs6SpmXvK+/nJ1OPMpOLs9itU
+      2jbphg1E6lcxefpF3lnyQ1J2nINOG+2eUZ5ObMfIe3hIP0bCjjBoVOIVJrZUMfDMeWheOur1
+      hjKvg7zuj6s3CdCiIyxcOMb3Z8+yt28xDdoUVZVedxTo49T/eZA3bZtT42M0RKNUhcKX5KXj
+      kHtrN9IwCD34AOIa9+Bnr5/km/ct5cV3z/PA2jbCgavXAgJwHMmze86SPXeGC8MX+Ja+i3+M
+      fg1/uYM1lSGse3msMUM8EOfV/b0cKC0lKApYpmD50iTfHHmO87KWqVKcp0vbyOO9bBb38v7+
+      5b8/IYSDr6qf9TU57h88xb/M3oemmtzjO4ksC7oK8HHqvxXkC6bJibERmuNl1IYjICVOYRZK
+      GV7pKqEqgqlknt9/YAWaqsy1BI4Ninrpucyk8uzvHObOibP8QzJEfvIsC1Y1s6t3gNaOEPlk
+      DM2T4ZH8Yfak13Fi0MSQHpYVJvGWmVTZo0yIMjzSIOmEOGW2cn0Hto/BB3tQWpFoYz/bA2ma
+      +0b4+/xDoDgs9/TRabWyQh2YvwJMT45jCw+qNDEdKBVy+P1BMtkctQ3NFNPTZEo2PsXBVjxY
+      xTzBaDkhXTI8kSAU9FMo2bQ0Ncx5lLoKcFPl9w/2s7iymkPDg2xtacNbnME8+TQiXIMIVDAV
+      XUtlPIRHU5HSwTj8z2AVUSoW4ul4EMcyePrFXVzo7SbhbWAVaUKeFG+FddLTAr8SJ1sAx3Bo
+      M8YpmhZjohJbSgqOzlZPF6fsRlZ5L/BOcRnWxcWqbp6xCyBRAgnqWmd4otjH2GCAZ80tVGkJ
+      pq0YtlC4x3OKGRme/zBoemaKUF0bFEsoqPjDYRKDg1S1LSKTzWCbNpp0sFCQ+Vm0SC2FXBpR
+      VIjHI4xNJqkM6RiOmyDjZsqfnTjNZGYCTW8hVypi2fbcvtQIVC5F1Kxg+o1/YG9ilpXLWmnf
+      sBInP4MjNJTKZRhnnkE038XUsRdIpjJ8v/ogTzt1jNXpBDSBeqGaO2IvY+UbOWh0EJOzOEJj
+      mBjShhI6AaWEBZQbRfbIlcy5JlznxOdh/34owsFXMcLyhhIPj53g5Yk1HJELAMmoNbdekCYd
+      dhhzK1/PuwUYGx6cM15KOfyRMqxilmAkRmo2iT8QwONRKBgOXmHjqF6sQgZfOIYmHBLJDNFw
+      kFzJoq6mCul2gW6K/GRunJOjx1lcvZSh2WFC/jaaYnHKA0Gk42B2PofMJ/jRQYXYKh+9J3P8
+      T9/6Cm/0v8qdk2eIpYbxd2zHSuQoDg3w25TGhKeONqWHasXgzKyKJxvktKeWRmUcS+gUHI1J
+      a255Esv2ME2YoChioZJzfHiEjXnRtWGOT77PLzx54i2T3O+dpnlggJ9kHmSayFVyCg5SUfBI
+      a/4tQO1VjlRza8LHou/nno1fsf/9X+HIXN6B97IPuDn4bg6OlOzr20Pn+GnWNK7njrqGS/uE
+      oqAvfwKA2WPPUnynRMIJ8dvu4/9/e2caY9dx3flf3fVt/Zbe92Y32VxEmaREiVqpMLJsyXZs
+      y7acZCYBEswAgwEywACzYL4OkM8JgtkHmGQyTjIZB7Ysb5Bly3JkWisXiXvvzV7Ye7/9vfvu
+      VjUfXjdFimSTDEVTit4fIFB9eV7dqrrn1HLqLMSjg5SSEHpV+pI9XDx3lGDHAb506n8wa3cy
+      W0xScHzWvO18MfkG3d4c3VqWmm5x0ttOPPQRls/JcCcKQVxzWAnr39/fOPQKIVFoH+3HFwor
+      tcrggMNXiucYnWnmz7znCbh64tOQ9ZCJIsCVJlKIxk3wP0Y4foWH+g7RluhAF1druqWTIxj9
+      CXrPA8TTUbKJWSwnjW1Y5HKnefmMQ3v6M3zt/e9CpR+xeIa/9X4XYjaLhVWeM96jislLhd8k
+      r0fYb07huhH0ULJuxvBl3eoyJmqXtxwfQHzo1vfOIQyHVP86jzcV+czcOb6Te5JJdf0EjFII
+      UOBhsNe8yFzQ0bgH+KRBeR7uxATK929Is615O6EMmM1dpCfdd/l5qVZk/Od/zKXmQYKJn/O5
+      vTu4v+UIbekIaD5nJmIc6clRS7UytubRnThNPFcklqjyaPIMLUaFn4YH2GYuMRhdJqOVmQy7
+      cJRJrtJCTVrYwsdRFiUZr7/0uufdj4D5hcTKrLB77zp/yDms0Rx/mv3aDZnfFD5prVx3hkHR
+      pFUZClcbK8AnCUopCi9+D2t4B8WXvk/qmy9cl87UDL468BxBocDZsgCRpzeV5pWRH/PZVA9v
+      TB+lBbjfcBnKjfC2P8Gh3c/gTjgcu7CElCeotif4UeKf4K6/TZgc5t3yAFI7y6zbzkzYjlKC
+      Dj1LoHSmwm6a4yVWwxRBqBPVXBy5cafwEc/4oNDsCq0DJZ6IrNM3P8mLuUeZlR03/IUmJAJF
+      m5bHkTa28Dnnb2N7kGusAJ8obOgrovv2obbQDIX5PKVXfsr4++/TPTfPyOoKVd9D13QKO58j
+      Xl0ntv93mfrVcb6V6EPPt/Hm2VcYunSeM83DDKeTTFaaeHrtP7PbzDJ44T2+NvcXGG7INmOR
+      QX2RQOn06qtEhUdCc8ireN22R4EjI3en/7pPomeVR/as8Xu1E6yPBfyX7Je3YP767bJOiC18
+      FsJWYloNQ4S8oL9FzK42VoBPEoSmET34IMUf/ojYo4/ckC4sFDB7etA62/FnZgllBl1ofPG+
+      r/De/AnuP/xvMBLt/CJM87y7xsu1CA8nnuTvCq8zsLzA+aiH6t7BX0+b5MMMfabDz5xnWJEZ
+      CloEW3gYIuQ9byed+jpR4bKuklyty7xyxr9D604hsTPrDHX7HHHHKE4G/HnlCEWZuNkP6z4A
+      QJNwqCqbL9nvMLE+zGRmiDm3vSEAH2fI/CzBxC/QdjyNtrGXt4eHsYeHt/ydOTCAP3+J3vMj
+      rBzYx8OtbRtxPQ0e3fbEZTq7v4/zUR+vbHPm9RN0BSWWB2zkksUL2dd4Vd/GIy1v8GL2GYoq
+      jq7XY3NGNY+KjNCslYhpNbLBpqrxZqqda721tvyJUJhNRbp6PH5TTtE0v8SPyoe4GFx/n381
+      1OUIEgqBpfkYKmApaEFTgvaWVmRvumEKcSf132362tE/QX/gDwnf+0sih//tR1q/VIqF7Br/
+      +4d/ze+kd5B48jf49n//K7KqTGsmYGfsLG/lDpAu5xnxBlhTTUg0bOExaC4i0VgJ0wRK5wF7
+      HFdaHPN2bzi13MiL6xa/s1DokQqd3T6HxQx9uUleK+/lpLfrqgjQW6PO1rqQZLRSXfWpLKTU
+      sPD59+oXzHymsQJ8zCFQ5WXuNHaBcsuE6+PoHXuZys1wfPYdlubaCCam2KslsCfexLx0lj9I
+      juGVpjha3cv7xQG6zUke0pcIhUWJSN2fFouloKXuyIIgROOYuweLeiYWKYwrZvUrmf5WGFdh
+      xBzaOx2eEjPszI3xurOL79S+SnC9oFhbriD194WqHjoxGybp0tdxhUVOJfgL8yGqTl9jBbiT
+      +u82vaoV8C6+ibXtcUQkdfMfXKd+Ffp4b/1X9J4HCVdH+L4Z55kdX+GPv/Mt/kXxJK8Ye/iC
+      /w7mkkl5dye5yXmOi13E9TJn/e3g6UTMKjVlcYkWevQ1sjKBp8zLIUagHn7kyjCEtweFGa/R
+      0eHzpJhkODfKm84Ojtb24ynzH1jnB3UbIqxHkkBRVRGimkezWa0Ha7vD2hu4ixCRFPqOzyFu
+      Q8CugQxQtQJyfRJVzWK3NPMnr/9HXNXGz+Uw7WWFCjwi3Y9wYnqRd7RDFMI4e+QcUc1h1c4Q
+      9w1czUQnZE0mqW1EZwCBIQICpd/a1uTDM7aQ2EmHvhaHI944zesLvOEO8133hbpwfUSaU4Ug
+      o5WQSuAom0BqiNCnzSo3BOAfPYRASR/lVUApDM3k9x/+l5xbXMQafYXhlTmmCy28N19jURvk
+      AW8eUvO87e/EUgHl0Kas2RgbqsSyrOcFEKiNOMybs/4tcOsG8ws9INHssyue4wn3AmqlzFF/
+      D6e8Q8gro719RHuTUGmUZZSqihARHhHhk26KY6b7GwLwjx5CQ4u1og88TjDyYw71P8pfv/0T
+      nqucIXZpmZWKzUnxIO2ixIIZ8gbb6fSydOtZDkff59uVpynKOK6ysMUHLpcKDQTXCWNyIyiM
+      aEBrs8ch7SL3VyZZWLH4gb+Pab/7rnUfAEF95lc6TVSxRMBT+kmW/d23LwBerUq5FhCzNHQr
+      RjG/RiKZoZDP0drWhl+rUnFDLE2idJvAKRNNZbA0WFvPkU7GKTk+LZlb29M28A+HUor5yddQ
+      CydpufgWKnGIpvFX+cLKUdprDjNFgyAVsG9mhpciu8D0sHBJixKW8JkKuvExsDbMGy7f7tZr
+      37jl3RpCD4mnAoZjBQ4F46Tzy5wI+/lP3jOUVewuWUSqjRhDG+HSgYeDaU4aA/RY6yRiBpkn
+      /jlvvDF6+wIwPTVJc2c/ldIa0mjFD0JWR86S7uxjLVfCrxaRUlHRBMpbch+V/QAAFCJJREFU
+      Ros2U15aIm5qSKExMbNIOmbipZJot5m8Ahr+ANdDqBSBDLF14yr69aWL5H/4LaKpHbj5o2RL
+      UyRGX0a2PYlvZOnVj7M6vYsAl4jpkgrzzIYd1EyTt/3d7GMSqQRprUJh07bnGnPmK59tQJPY
+      iZCeuMcjjDNQmePSepRXg91MBY/dwWH51iCEIi4cSiqGoG7787axncetcxxpHuX75udpHv1v
+      DMUeun0BsDTIlyuk9JCqVyWoFbBicfK5HKl0BqlCar7E0iRSGHjlPHY0Rqgk+WIFy9CpuAEd
+      QiA24szfTS2QEOITqwW6GX0YSs7PrDJZXiUZt+hLZRhMZy7TR86cwsw4ZKpTSDTmd8DoxDOU
+      lm16OnroXQ5Y3PcZut89RzkTIZQpQqGxELZsmDPXiGj+Vbm3PsCHL7UUVkzRFXc5IGbY6V2k
+      mFOcVNt40fs8rrq+v/HdQknFLrdTItipXWJOtVH2Q561TvHmTBdPP5S6czWo2oxAphSu62Lb
+      1+uo2CD54FVCiIYa9A7pf/jGKHZM553ROf71Vx/n2KUZfmPbEPPFWc4tnmbfwnmc6VkyxWm8
+      dBfn5rtYDWKc6L2PzNocwlV8Y2WCV40uzm9rprlUZClop6J0JGIjiKzEUwZlGb1W1akpIrGA
+      Htvlfm2B4WCakiM5pfo54w9RkdHrtvvuos5jlqj7JdetPyUakn32LD1Gnm5TcHhvBLV24c4P
+      wZeZVwgika2NoG6H0RuAc8tLzOWz9Geaua+985r/Lzsev3FgmFMzi/zg7Ht0pQMqXjvvzrzF
+      kR2f5SdnXuF5sURteB9HAw29Mse8t5PK8iI9YRbbdAma55nVB/EKGudkP91Bgedjb/OX3udI
+      aA6rYRpPGfUJDIFmQFM8ZFAU2KvP0uUusFq0Oaf18Kr/1N1l+ltwmxQCUAofA11I4poDGvjC
+      piwjZM0m9nbshNYBxsr3Ny7C7qT+u03/8+9+hwf9kJOWzme//gLh6gjB2E8R8Vb8PV/GcQVH
+      35+jvzPFePnn7O3az7szF5CqhOPlOPBejqZnnqDlrVdZGuxkdmGKRfOLPDz5LU5pA6x7CToq
+      NX5q7iVEI0RHKYhrNTKizLxsBSGwI4JOq8ZuuciQNofhVJlTTZxW25gN2jeS2N1r1A++dfvP
+      uuOLLXwSKZeqm+RgxzgXC+3EbYP/cKDIiex+6O5tqEE/zsgsr3D2C5+n+Sc/AyAY/xnW4/+K
+      lWN/zrmzL7Kq6ezd9TRrlTJ+qBi/JFjOuoSWzuzaWZ5KHcCemyT01pDT0+wruUTLL5JTcUzh
+      MRe082jTG5i13RtBqgQRzUdGImSsCsPhPENigYRfYK1iMSK6eDN4kKKK1zVAN5qRPyoH95ui
+      /pKI5lGTFgqBAnr1VcphnAAN4Ub5nHmcnDyETY6hB/uZzv6AcQb58rb2xgpwJ/Xfbfrij35M
+      2fdJWBbJL30Rf/xnqMI8Y/PHuO+3/oxfXjyOZXayt6OLP335FYQ06TWjFM6/RrIroLg+x2dL
+      ZRJeikhqkTNimN3RU1xY3c9pWnlAm+Fl8SAlkaZVcxlSK/SJFcygylpgM6m1MR12kpXJeh7e
+      y5lZPh7QhEQBQ8Yik343GvWkGUPmAtNk2K5KPP+5IyyXajzhLvP3QYVUuMTBnW0c1eKYTmML
+      dEf13216pRR+Po+ZTiOEqCsR3CIXS0u8O3+MmJXGtobpS6X5ybFxnr5vO6Mv/ZhfJGd5em2Z
+      korRalXoFwt0qjxZ2YMuSuSMVi5VW+nRs1Q8k4JrskaUSdHOukxSknFcZRDVPGrKrM+sl3X+
+      91oANgzshKJT5EmJMoUwwbJIIQCTgIPxeR49uIdj01lavTh7dYfZZAcPP/co3333NeJxn28+
+      8iyZWHNDAO6k/ntNr4BctUq+5tDblOYX700jz5/DblvlB+eyOLKNA1qVPcyicJFuhbxvk1UW
+      C3orrhejqOJ8rukCLxXvA12CIUjLElHNZUU1kwvihGhElE8g9MvRHW7btv8fjKvzfmkbG51O
+      K89DxjhLMkkxjDEnO6lImyPRdZZ7m9ne3UVzR5Znd3yBqC741dgKhq5xabXIE5/po7u17sPQ
+      EIA7qP9e0wdS4rgu1UKe2uoKweoclaWLrI6PUZAapVBnVcUIIjrogkgEOro6SGRPMFfeT68+
+      zoncDqwYRCNZyjmTuFHkkmxjV2ycY+UDSAT9xjJzfgfNWpHxoBcFV8T5ga1Xhdv3AhNCYRLg
+      Kx2FQIg600tVN78wVciT5nkSpkvgC5qNEqcTj3Epb0EkSiZt8tQDnXzx0D4svZ6FRkrF6Nw6
+      qYRNeyp6eUwbh+CPMcLVMaqTryMHjuCpOG5ujTC7hLO+SCm7ynq+SLHoUggFnp3ET7ZjNG8n
+      degxxheKlB0XvanKv+ub4lznZ+kZ+zalcIyMSHFKl6TEQeTuMj3LJaaMXVRFkZpI8UzkFGtN
+      DzIckZRiQ5ybixNNQsJZ4bBxil+6+zfyedWdzUM0tA2z47hwyMnkB5lKxUZBiY3M7Vc6zKiN
+      u4XNZ/W5WG38TiHYTJZtEKLrAXvkAsvpLrYvF3hX7GCwcx4zDkOhTkc04OB9KY77cb7y6EG0
+      KyZWTRPsHmhlqVRktpBnsLmlYQ59rxGEIZ7v41cquKUifmmdMLtKpZinXMiRXZgi69lUav8L
+      R48TaKCae7Fbekh27aXlvhS7WpvoyMRJxSNEbYMwDDl56V3SvXlMYzsKmDn7FqY5QirVwam1
+      GM8ceoDO4hu0XrhI/2An2RFB16ESp/IG/+zw/ZxZ7ub5jov82fl+NN3mkcEoHeEZsoZi59IC
+      FdHHiBtDKo0QjUAJ0BRKhHjKICGqpLUyl2Qr281FLvptBJjoSAJ0Oo111sMUbXqemKgRKJ1l
+      2YwjLTRRd2LvCXNkaSJhlPE0kyZRwWiPYsxq6OtV3pP99PXMEFlOMRvr5nlthskv/Dbn3zjB
+      0186fBXzb2KxWGAqu07cNDm3ssT9HV0NAfioEcgQ3/eRrotfqRJWS/iVPG6pSK1cplgq4pTL
+      rJdqFCoeruPjCA1lx1GxJHqylXiqm1jbbpo0g22tbbSGl2juGsD2sxhuFvux30dsLO0fxqXC
+      HI5f48mhp/jL4y9yePuzzA59ld9q1bF6vsYXalVW/uZbPDw9Rd+zX+XJg0/yrWMv0qpsWkSV
+      Hdt6mZRNOA88Ta8YYX6uzFqQZGD4mwx3Qu8P/ic/dCWH7BHmRQu9u9J0jM0ypZmUagahoVM2
+      LHzfxFJQTPew210mHzZhlcpUZBSBIiYCrCCk3c4TqRqEtgm6Iq1smrqbWV1YR5gWg0aOJ5/7
+      BieO/pJn9Qn+T2YvD3avcSA0STzyTWLHL9D86FN4IyM8Fq3xYJcgNdh+3bGpBQHpaJSUZbNY
+      LgONM8B169d0nTAMCX0f6Xko1yXwqoROBb/mUKtU8RyHiuNQLVepeD6Vqkuh7OHUXPwgJNAt
+      pGkirCgqmsZOJIg3JbAiUTLJBOlEhExThFQ8QjxqErEMLEO/aiyUX8W/9D5mzwG8Y3+O9dgf
+      4Z/7HkbfI2ip3uu2f620yt9PvkpfZgAvcBlsfYB0JEriChOV1b/5f7yW2UF5epZnv36EZCrO
+      xeklmqM6JxbK3LetncnqCkeGdvCLyXF8GbKrtZ3lcok9Z87z7TPn6NNyHG1p55+2T5EbF6wk
+      t7O47HCk4yw/LDzIci2OacX4+tcHOT1RYk9S4i28zouL23hBe58J6xDx3FlkpZ8zWpzfto4z
+      vG0bWlrDr5URkT1UohVU5x5682d5cdogbH4IPw5ff3gvwfvH8dfXaf3s58G00JXCHR/H7OtD
+      b2q6IT+cWV6k6ro81NuPoeufbAGQGwyuggAVhsggQAQ+UgZI38P3fdyaSxAEBJ6P53kErovn
+      B9RcD8cLcFwf1w1w3ADHrVGtBfhBgKYEgWYgNR2laxhWFGHHMKMRItEIdiSCHYkSsQySiQiJ
+      qEUiapGM2cQiJqahYRk6hq7dNC3prfQ3XBsnGH0ZkWjH3Pc7NxyzIAjI17LknTxDrTvQxLWW
+      l+985yfomQzdC1P8qmsvv/3MvmtoXpscpzeVYjK7zuP9g2SrFfrTGUovfR/51G8yevRt7r9/
+      iKbhnfztj4/z7Pr/5XulIR7prvBacYA/2G/zWmGYMwsrgMdTB20erczz0uk8/UN7GVlwyI9N
+      MZhb4VSf4o++8WWam/dS+sH3CDWdU/v3oUyLw9uGsAyD04sLrDtVAhny9NDwVbmO70SxcNcE
+      IPA9AiVQgYcViaEJRaXqEIvY1LyAWDSClJLjb5+k4njIIMQPQ4IwJAgkXiAJ/Toz+oGsP5eK
+      QEqElAShRCLQpUJpAqXpSF2vZ0LRDDTdwjJ1NF3Hti1M28Q0TXTDJGLVZ1zb0olYBhHLIGrX
+      n5mGIGZb6LqGoWvomriGiW80mLc0Lh8D+lLV5e/+9lUiLc08sH+I+wavDSwVhCGzhTxdTUmi
+      5gemDt7SEtXXf4mWSND03LMIXWdhrcRrx0aI6T4dQ2niRoazY6ukEhGO7O8nGrEw9DrD1rUx
+      a3Q0J1BKcXFllaqYJltd44Heh+hLD1x31VZK4YYBlm5cs7//WArA2IVztLS1Uaq4GIZJwoKC
+      41HzAiK6Rs/AAEJJ3jwzgxACTQh0XWCZBromMHUN09DrZUPDtkwEIGWIbVkoFJoQGLoOKHRN
+      oGkacsPHYLMspcQwjGueb648Hy5fSb/J9Jtm1dcrK6XQNO2a55vPPly+8u/rtffD5StxM/oP
+      90cIQRiG6Lp+TX9CWf+nC3WZGbbq52abN+u7UT9vdfw3y0EY8OLpb/PVz7zAS2f+jm/u/73L
+      777RN/pw+cM7ia36sTkmmqahadrdOwS7NQc/DAnDeiZADwjDEBmGhKjLWq/H7u+/poGbMnm9
+      chiG9RxYN6DZrOvKAdQ07ZrnW5W1D/kpbDWgm7PVzQZ9s41SSrSN5ftW2nK79Jvt33x+o/4Y
+      Rr0cBMFVDH2zPl9Z/62M/5Xvvx6NIQw0TTC+NoplWJeFdas+3+wdt9KPy2Nyt1aAmlNFCR0N
+      iW5YIBS+52OZJn4oidjWx/YQfK+3KB9n+s3Z81a/2aaAbUVf82tczE4y1DKMqZu/1m9211aA
+      SDR2zTMjWn+d3lC+NnAFImaE3R17gaudpn4daESHbuBTjYYANPCpRkMAGvhUoyEADXyq0RCA
+      Bj7VaAhAA59q3HOFZBiGt3UPsHkZdqu43o3qR1n/p5X+Vr/Z5l3M7eDX+c3uqQBsRm27HQHY
+      vNm9FWze/N0q/e3W/2mkv/LW91brv53Lzl/3N7un1qANNHCvcc/PAGvLi4xPTBJIxcz0BHOX
+      Fq8lkh7jY+MsrWbJry5xcW4BuYXcKiUZGR0FILuyxNjoBMGWYq5YvDhCvgaeU2RsbAov2HpJ
+      zWfXmLo4iwpqjI+Ps7yW35K+UswzMTFJIGFqYoxcsbw1fanAyNgESimmJsZYWFzZkt5zqkyO
+      XqAawOz0JGvZrdsjA4+T758GYPbiFDNzC1vSg+Lc6fdwfMnC3AyLK+tb+sDXciuMXpwnkIrF
+      +Rkmp2fZaqqVoc/IhQtUXZ/VxUvMLS5v7WOvJNOTExQrDrVSltGxcUpVbwv6kMnxccpVl3J+
+      jcnpOQIp770AuIEkGbPwQ9CtCCq8TgZ06RFNtuI5FexojGouSy288fAIoZFK1b3+HT+gOW7h
+      brmtFGTSKaQCTTcQyqNYrm3Zbt/z6sGAfY9EpgXXqWxJH4YBsaYUuoBoJEJ2PbslvWWZBBtC
+      aEdjBP7W7TFsE5QkDCXRWJS1m9S/dGmOUqWCF4RopoVQW0egLq4vkS2WqTgusViU3Nralgyt
+      RWLo1SxFVyKFjnkT0x4hwLYMcvkC0XiM4uoa3lYSoELKFYe1tTU8t0amuRnH3WKMpEe56rG2
+      toZpRfCrJapecO8PwW0taXKlGsp3aIpFEGb8WiIjjs0i8dYWPN8n2dpKVL/xnlKpEEJJsZAn
+      nc5QLDu0bPkBFBVPgCpQMyASS5BuutaW6ep3KBynStRqQg8qZDpvnKl8k96t1ag6VQzTpDWV
+      3JLeqTq0tLbgOA6xiIUZ3Tqfgus42E3NiLCGYRi0tbZuSd89sJ1MezeB55KMx1D61tGbky1d
+      HHo4TRgq/NCgpb2Nrbb1QtOwkq3YysVqasKT4ibBIQSWZZNORPF9n0x7G9ZW9JpBX28XmmFj
+      GBpBvkhHV/ON6fUI/b1t6GYUNwhJpDPELbNxBmjg0417vgVqoIF7iYYANPCpxj0/AzQAp955
+      jbBpG0PdrQROgZWST2cmSr7oUPUlrQmDcmhgBhWS7QOMvPcWTR39NBkho+NTtPQN0puOUJUW
+      sprF0KBIC23aKst5h6WVLIYp2LV7L7mSQ8wSGIRgJSjnV3F9RW9vD7lSlZgW4Cqd8bFRnj78
+      CD/9+7c5ePAg+VyemKWwYikqVQdbC4mlO2nNJO718N0RGgJwz6GYXVhDRUKyY2+w5Cbp7mpj
+      arrInu0DnD8/Rls6TqAUtXKJod0627b18+7pMVqaM6SbklQLWc4XFKbroMXiVBbn6LjvMOcn
+      5zA7BkgkfRAS3CrjZy6Q6WvFRIA7jStNDF3y8o9HGNw5SBgqbA2amuIYVpzujM3RXx7l8DPP
+      MT3yPl72fcK2vbgr4/QOBbRmdt/rAbwjNA7B9xoqpFB0UCqgUqnQ1pLiwvgc/f3dGNJldrWM
+      VllhtqjY1ZMh3tJDUFrBIYatqoRGgmQigu+UqCmbsLJOU3MHdiRG6NdQSqOQWyYSjVF1XJxa
+      SFd3KwJRT6KNhhAKGYQsrOTo6e5AA7LZVbp7ehk5f4Gh4WEuzS+SiAjMeJpoPEFxZR493kJX
+      W+Zej+AdoSEAnwDcrvlBA7eO/w+fuxwhjQ1x7gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAZkElEQVR4nO3daXAcZZ7n8W9m1n2opNJhnZYtyzdgwAaGY6DDTQ8NAwzdw8zOEL0d3U3P
+      sttE7MyLfbERQ2wQ20xHzO6rCYidabY3uiO4B5o22Nxg7DaXsbHl25at+yhJVaq7KuvIzGdf
+      yJZdbTWWwbZQ5fOJAKn0PJn5pJy/yutfKUUIIZAkm1IXegCStJBkACRbkwGQbE0GQLI1GQDJ
+      1mQAJFuTAZBsTQZAsjUZAMnWZAAkW5MBkGxNBkCyNRkAaRETfPTuFv7pn37Btu2fXrC3Vcyx
+      /9CxM684sHe/DIC0eO15+xke+cd/IeD3su2NNwAwSzqffryLsakEAIO9R/ji0HEEEOvfy91/
+      81NisWmy2RgPbL4bxwKOX5K+lkI+h17I09ixkr/72X9FGFm+e+ufULf2Rq674TY2NuT4+39+
+      jvaAwYb7f0b9+HaSI8f54Q//nvvvX8+UngQhSYuVZYhXn/mluHfzzaL7uu+Io59sE1dt/g+z
+      zT+6e5N49aNekR/ZJ5rW3S7yI1+IlqvvON2aFytqWoTcA0iL1qG9n7D0mjv4zfN3sWn9NZQD
+      TSRH+4llCmiGTm1dHcODg4yQoy5cj6Y50NMpMnoJv1fD4dDlIZC0eFmlDP/43x8jlinyn5/4
+      N665+gb+1z98n3s238Z3//a/8N8e/2d+8nc/4zd5jSef/CWu5pX8ZHM3d9x2Pzu+eJtH/+En
+      KELIj0RK9iWvAkm2Jg+BpEWpnB5nx74h1q1dRVO4hlJBx+1WGI5kWdJYi0uDdK6I3+sCzYVR
+      KuDxeOg9fhSnx09bWxsqljwEkhanns8/pba9i4ljB/DXhygobk4dPEX76mWoZpGybuL3C3TT
+      w1R/L4qvjs333MWRPZ8gUCinpsg5fXIPIC1OqkMll07R0dVJz4kx2loC3HbnbWSiY3g99YQ6
+      uon2HmFVRzM702mCPj91HoWm+jpqGjrQo6MkcMs9gLT4GYaBw/HH38vz2TQOTwCX4/xTXhkA
+      ydbkVSDJ1mQAJFuTAZBsTQZAsjUZAMnWZAAkW5MBkGxNBkCyNRkAydZkACRbkwGQbK2igig6
+      OsikLli5tBWAVHwKf10TxXQaAwvV6UMzcpRUL0opjb+uBb9HFpRKi1fF1jsSmSBTFDitEqoK
+      E2Pj1DdPEpt00dnhY2RqmLqgF02F6GSU+uYC69asXKixS9LXVlENGovF0AQI1aSMh0xsjFBj
+      PYrpJ5eOoAsNoadJ6iaNIS+hxlYaw7ULOX5J+louuhw6FY/hDtbhcWqXa0ySdMVUBMDQM0wX
+      IBzw4NQUypaK8/SHCHL5PH6fb86ZlMtlnE7nlRmxJF1CFQE41dtL0bIoZdO0NvkYTIVYWmuS
+      MzS8Lo2pyBBlS6U26CdbMtAUD2o5Q051saKzUx4OSYtOxUlwKhVHLwrC4SBufw3Eyxw/dgTT
+      00BrUx3eQAgvkJoYYlxXCQTr2djm55TupGTKD5ZJi8+c5wBCWAihADNNqnr+7QLLsip+/oev
+      JWkxkJ8JlmxNvmVLtiYDINmaDIBkazIAkq3NGYAXXniBhx56iEceeYQnn3yyoq2np4cf/OAH
+      PPLIIzz99NMAHDhwgEceeYStW7de/hFL0iU0Zylnf38/jz/+OKtWrTqvbXBwkF/84hcsXbp0
+      9mf79u1jw4YNl2+UknSZzLkH8Hq9vPvuuzz11FMcPny4ok0IwbZt23jqqac4dmzmT07++Mc/
+      prGx8fKPVpIusS+9D5DL5Xj44Yd58cUXz2tLpVI8+uijPPvsswC8/PLLeDwe7rvvvss3Wkm6
+      xObcAzz77LOcOHGCPXv2UFs7U9/zzDPPUCqV2LJlC729vezevZtwOIxhGBw8eJCxsTFGR0c5
+      derUFV0BSfo65jwH6OrqYtu2bXg8Hn7+859XtK1bt47XX38dv9/P448/Trlc5rPPPsN3ulL0
+      0KFDdHd3X/6RS9IlIEshJFuT9wEkW5MBkGxNBkCyNRkAydZkACRbkwGQbK3iPsCnv3+PdLbM
+      mmuvI58rMNp3mLVXXY9uWKxc1rFQY5Sky6ZyD+DwsrzJS+9ghONHj+KtqWeg9xjRyYkFGt78
+      7HhnK1tf28LnB3vP+WmRzz7b+6XTndq7ndH0zPeilOTpX78EQM+hnpmvBw9W9M8nJohmil9p
+      jId6ei7Y5//+6//BEAAmv3z6/83Z58PtOxkaHvrS+Wzf+SEABz/eSfQrDPff/uV/8/wLL/DR
+      nrPrPzz05cucJQw+372Xsf5jvPb667z+zg4MPcGLL/47L778GoaAg5/v4s0dH89OsuuN59h7
+      Kloxm2Jmipdf+R3PvbwFC4ttr77EKy+9yFSmyNDJI7z0u5nK45OH9vLGG2/x1vaPGO87zNBk
+      +qLWtWIPsKprGdO6YFNAI9rcQK1bYKpu4uncRc30SusfHOHev/4hXk1w+ItPGRgZZ+0NN/Px
+      zvcZ6TvOtx54kM/efp2SI8h9d93Ca1vfxxsK02qOYy6fmcfeXR/h0AQ5A95763cYJYMtr2/F
+      H6pj6MgBprIG37lhOTE3vPfyB6gu+Pa3b+aNXYdxlVI0NjUhXDUsb3DROzjK6mtu4eBn7+F0
+      qCxds4nfvfIK4dblhJVpTiT9kBpC1QSjE9Ncs/FW2ptCOEsj7NjTR7dzhCFdY7z/OHuP9tHZ
+      vY7y9CDRbIn+oShOj4NiapqTg0O0r9zI8OFPUB0ay679FuuXNTI02Eds/dUMnDxJeMNNbHl9
+      K5Y3xE0r6lA6biByYg+1PgcnBiZYfc1Gpk4dYDKR484/v5+ASyVY38Hf/s1f8exzL5CbOIG7
+      oQuXWaCYiXFiYITla29gsm8fqaKLOzZ1s/OLEyzvXs21a1ew680tLL3lXsIewV90reXFF15i
+      5wcfctf3/wox8DE7D03w7Rv/lFNbXwUgPdHHaGSS2pbKpGrOIA98/3u8+dJLRPp34+26jXuv
+      ruWVrdt58IG7OXDsBADT0SihcB2jkWlaN9/K88+/QOdDD81726nYA7hDTRSFm9GMgyIefOEW
+      WlqaWb96xdfZPi+7Hz38MEd27+CdXbs50T/KfQ98n/Z6HyvXbmDzpnZ2vPcGwXWbualD4V9/
+      tYWb7vkeIT3BZOnsPPYeOk6Iad76fQ8r1m5g08ZNXL9xIys7W/EH/EyfGmQ8Mc5kJkMw1Mat
+      68L0DkVY0n0dnpCPO//sLqYm+vlgx4c4XV4OHT6I0ILc991bGRpKs/H662lrCuFt7ORkz0cM
+      j0+iGmWKehHr9M348PIbmB78gv2DcTYtD/Pe+9vxuJwcP3qYgbE4d991F7U+B4PDg3h9XoK1
+      DRw8sheh+vjzv9hM/74jAOjZNP39/YxPxhj64gPab7qH9SGd3Qf7yBRhbGwEyzQoFHUsq8SH
+      uz7GLbL0nIgAMHjyMG+9/S533fs9MkWLb928keHBQXpO9HPvfQ+wojbDjj2DlGJ99EcLFAoF
+      TMMCYChRorPOg9shePWlF7jxjjvJmuB3KfiDQbLZfMW/3W+ee5mGWi9Dg4Mc2vsxr7zyCq9s
+      ew+Hx8Pv33mN9quuQ8tl8dUEQPMClUGxNI1SPo9pGoCChXVR205FAAYiSR771fbZ/wYiSTLp
+      OLv37GF4ZJiDR48yOtxPdDpJPBZhODJ5UQu7PATPP/MbLIebcqmIWy3z7ttvMhCJz/ao61jD
+      yc/e4cP9o9xz57Xs2LaV47EcYddMu5EZo3X9n/KXP3yU0sRxAorJF8f6KKbjnDy8h48Pj2KZ
+      ZWaLRhRQZueuAMrs6xXLloMC3d3dKArM/A8S0xEmpjOAhteaxt/UjdPtIVjjo+fA2UONloCC
+      6WsCYM3K5RhCYXnXCkQxxfvvv09aNwHYuWsnlmHOhuecAVFTv4Qbb7yRtSuXsaR7PQd2bOPT
+      4zHWr2xm1wdvcuTkEA6nm5pgDQd6jrKsswPFG2JlRwMAy1ZexT13301TrR+X6+wT/0JulXfe
+      fZtjkxZdzV78DZ0sqfNRV1vDoSMHAAg4IGcIXn3m1+CvY2xkmNuvX8Pzz/+WF974nNuvX8aR
+      /bvp2d9DPFfiP/7opyxrb6W+oYGrN93Kgw8+yIP3fodjH23jUKTIdCRCeO3NHH3/t2z59+dY
+      edXNjPYdZ//+HgbHY8SnY6BppNNJANSL2/4ra4EO9U/x2K+2zzY+8dPNrF9Wzye7PkRXnfgU
+      uPqaFYyMFIhO96N6G7j9husvbomXhaBcNmYfz2gYBg5HZZ2fZZmAiqoqWKYJqoqqKHPMa4Zp
+      mqiqghAKQlhomooQCl8yyay5li8sC6Eo5y1zrr5ztwtM00LTZp7JeubZTYoCygUGde66n7u8
+      2e+FwLAsHNqFn/d6ZhphWVgCNE3FMAw0hwMFKOeivLXrKPd/947KMZgmKDNj+CqEZWEKMecY
+      y+UyDoeT8f7DjGac3HTt6nnP94IP9x/qO0oRN0GPi3RGJz6dJp5IEvDVkCmVL24tLhul4tmk
+      c21Qqnr2F6fO4x/6zIY2s22d+/2FzbV8RVWZa/Iv2/gr25XZMc2MRZ33eM5d93OXN/u9osxr
+      4z93GkVV0f7gZwBOfyP33XX7+WOY5/z/GEVV/+jGeubfvrVrPW3z/aWcme+5e4CsXmIgkpxt
+      XN5SS8DruvjRStIiUREqv1JgrfPs5S5N8QAyAHMRQlzw0EP2/eb3rQiAGT2B/sqPZ197H/w1
+      emgFR0/00dK8hGQmSzjgwe0PMzrUy5LWZbQ2N81rwdXGsqyKQ5IvY5rmBQ91ZN+F6XvBUgh/
+      IEQ5n+LE4ACZeJSaWhdTEzGmJiYolQrzWqgkfVNdMABnT4I95EqC+HSaZDpF05IWEqnkhSZf
+      cEKYJJNphDAplWcuISYTcUwhiMfjCGEST8ysRzGfIaeXyKQSlAyLRDyOECAsg3giRbmYJ53T
+      F3J1pEus4iRYFNKY0ROzjVrjahRPzYIM7FIZ7D2OUlNPrdsiqztoa/EzMpJAT0QItrczPhSl
+      tSFAqL2T6bERhCVQVAWhxyHYjmIZaKKEZQpKqoJDWLS3d2Ca5ryPOy/m0fGy75XtW3HgJEwN
+      I+Offa2GtTkv3S0mAbegP5ahtiNAKp0mXOcgn02hudykkkmcTo1UVsdb0DHKRUyhgVlAUxzo
+      qSQBn4uysMjnCri8TgqmQFVVhBDzPge40LV+2Xfh+lbsAQpHjzL1P5+YbWz6H49Rbm+e8yQ4
+      NjVKfWMrTQ3heS34m0GQy+l4vR5UVZ19N7AsC13X8fm8gDJzpUBVEee8W1iWhaIoCEBVFEzT
+      lAGogr5f+ST4i309JNOpeS30m0PB7/fNbtTnfvX7/advLimop29anburVNXTbRd5o0X6ZvvK
+      J8Htrc1kc9/sKlFJupCKQyArl6N0Tt23q7MT1e+fc0K7k4dA1dG3Yqqiy8X4OTe2Wl0uvPOa
+      rSQtThUBGM+kePrzT2df/6cbb6bJoZ5/EuyrZXiwD2+whnWr5195J0nfNF/tJHgyTkdrI4rD
+      cyXGKEmXzVcqh06mdUqGxnUbrr0SY5Sky6biJFgvlxnPnL202RoM4T2nzl46S54EV0ffiqks
+      UaJYmjjntReQAZCqV0UAhuIDPPHuY7OvH/uzJ+jwtc55J3hitJ+6xlbaW5uv+KAl6VL5yneC
+      T/X3MzDUdyXGKEmXzVc6CU6ks3j9QfzBxVUpOjTQR7DGz1Qsh98lyBsWCk6EUaZrzSomhvoo
+      K25EKYfb7SCrW9TVN6GZOaKJHAG/k2JZoburc6FXRbpEKk6Cc6UcQ/GB2cbO8HL8ruq5E3yw
+      Zx8rVq8jMTVBOhalae0qTh0eZmVrCHfLUpKR0bMFcrlJ1Pq1WHoCVRE4TYuspuK0LNrb22U5
+      dJX0tdWfSIqMDqG4A1DWqW9uIxaJ0NgUJhrP4nIouJwaluJAlHUc3hC5ZJRQXR2WUEhndWo8
+      DoqWQl0oKK8CVUlfWwXgUpIBqI6+8vHokq3JAEi2JgMg2ZoMgGRrMgCSrckASLYmAyDZmgyA
+      ZGsyAJKtyQBItja/+8dVYiIyisvrIxNP4/O7SGXy+AMhcvkcXV3LiEZGMc5Ug/p8ZJNp6pa0
+      oZp5phJZan0udEOho01+BqJa2CoA0ckpulatIpLLoicNWjas4fje46xtD5MxwbRULLOA5nBS
+      iA7iat1IJjmGpmqENJWUaeGyTCzLwrIs5ltGZVkWhmHIvt/AvrYqhhvo68UbrKWYzxOsCZJM
+      JKkNh0lm8oT8npm/BKk4scp5nN4g2cQ0tfWNWJZJKqdT43ZQFAotTY2yGK5K+toqAJeSDEB1
+      9JUnwZKtyQBItiYDINmaDIBkazIAkq3JAEi2JgMg2ZoMgGRrMgCSrckASLZmq2K4ZDyGpajo
+      uTwurxc9k6G+sZHpZIalbc0kp6MYqhtRyuL2h8jEo4SbO1ANnalkjlqfA91QaWqoW+hVkS4R
+      WwVgZGSYrlVX4RQlUok0NUubObz/JGva6kibkC+UMa0CmqZSGDuGtmQDsckImqbgNi1ieQOH
+      aWFZIVkNWiV9bRUAp8NBJptBsRRaWus5NTjCkqYwk7ki9ZkkllVGKA7KRR1HoIns5CCh2hCW
+      sEjmS/g9Dspi5g9pCyFkMVwV9JXVoKeZhoE2z18iyGrQaukrT4JPu5iNX6oeMgCSrckASLYm
+      AyDZmgyAZGsyAJKtyQBItiYDINmaDIBkazIAkq3ZKgBFPUe+UCKTTFAoGcTjcYQwiSeSM+35
+      DDm9RCaVoGRYJOJxhABhGcQTKcrFPOmcvsBrIV1KVVcLND0VQXUHqQsFzms7dGA/7cuW0n9i
+      kM7WRspeD+NDUVobAoTaO5keG0FYAkVVEHocgu0oloEmSlimoKQqOIRFe3uH/EvxVdK3qgpg
+      +o4dxPKGKYyfINvcSUdzQ0V7uVREL5QI1gSJJ5NYRQ9Op0Yqq+Mt6BjlIqbQwCygKQ70VJKA
+      z0VZWORzBVxeJwVTyGrQKupbVQGIJ5LEh0cpGm7uv3bjee3X3/AnAFiNS1BUFXH63cCyLHRd
+      Z9nyLkBBCFHRDjPvHIqiUFW7S6m6AtDQECbUugKtkGRkInbeHuCMMxu1cvqrqqr4/f7Z9jOH
+      Nso5u8rZaS7LyKWFUlUnwcu611BKTWE4g39045ekc1VVABTVAeUslupa6KFIi0RVBQBgamyQ
+      I70DCz0MaZGougAY7joCSmGhhyEtElV1EhybjlEfClByyeN/aX6qag/QUN+A5gmxacOahR6K
+      tEhUVQAy0xH27Ouht294oYciLRJVFYDjvb2EFIV4objQQ5EWiaqrBbpS5HOBqqNvVe0BAD55
+      97fs2n9yoYchLRJVdRUIwOUNMJ1Jzdk2NNBHsK6RqfEhmpsamUykUXAijDJda1YxMdRHWXEj
+      SjncbgdZ3aKuvgnNzBFN5Aj4nRTLCt1dnVd4raTLpeoCMDo0SL7GOWdbKpWiobkNnzfAxMgY
+      Dau7OXV4mJWtIYoWKA43DstC9fqxcpME6tdS1BOoiiDsdZNVVFwOC8uy5MNxq6Rv1Z0DHDu0
+      n4QOt9x43XltkdEhFLcfUcwTamwhFYvS2BQmGs/icii4nBqW4kCUdRzeELlklFBdHZZQSGd1
+      ajwOipZCXSgozwGqpG/V7QGEaWCKuVerpb3y0MXX1jrz8yWeP+g582GagLftbF+vd+brJRqn
+      9M1QdQEYGY9gaud/GkyS5lJVV4Hik6NExkZJ6vM7HpSkqtoDBGsbaOtcwY0337LQQ5EWiara
+      AxTyGZpbWpmKxhd6KNIiUVUBCNY1UsgkyMtSCGmeqioAALl8fqGHIC0iVRcAM5dnKplc6GFI
+      i0RVBaBcLtPSsQQ9Kz8RJs1PVQVg4ORReo70UiqVFnoo0iJRVQFYtW4DTU1L8LuqarWky6iq
+      7gMANNa4oWHlnG1nqkGLqRF0M0TZzMtqUJurugAkYhGmswE2rGw/ry2VSlHf0MDQVALDKLF8
+      Q5esBrV536oKQN+RvQxnXKxfWjNne2NDPdmCwXUbb6JQVkjEpth03Uqi8SwkpwnVBM5Wg9Zf
+      PVMN2ni2GrTldDWofDhu9fStqgB0rFjDskiMaGLuD8ScWw3qcUOLrAa1vaoKwFRkHG9tI401
+      4YUeirRIVFUA2pevon35Qo9CWkzk9ULJ1mQAJFuTAZBsTQZAsjUZAMnWZAAkW5MBkGxNBkCy
+      taq6EXYhE5FRXN4AZT0PiiCT1fEHQuTyObq6lhGNjGKcqQb1+cgm09QtaUM180wlstT6XOiG
+      Qkdb80KvinSJ2CoA0ckpulY3YRazTI/FaNmwhuN7j7O2PUzGBNNSscwCmsNJITqIq3UjmeQY
+      mqoR0lRSpoXLMmU1aBX1rbpng36Zgb5evMFajGIBr89HKpmiNhwmmckT8nuwzDJCcWKV8zi9
+      QbKJaWrrG7Esk1ROp8btoCgUWpoa5bNBq6SvrQJwKckAVEdfeRIs2ZoMgGRrMgCSrckASLYm
+      AyDZmgyAZGsyAJKtyQBItiYDINmaDIBka7YqhkvGY1iqk1I+i78mRCIWo76xkelkhqVtzSSn
+      oxiqG1HK4vaHyMSjhJs7UA2dqWSOWp8D3VBpaqhb6FWRLhFbBWBkZJiuVetRjALTIyPUdi/j
+      8P6TrGmrI21CvlDGtApomkph7Bjakg3EJiNomoLbtIjlDRymhWWFZDVolfS1VQCcDgeZbJKJ
+      oTHaO1qYHBxhSVOYyVyR+kwSyyojFAfloo4j0ER2cpBQbQhLWCTzJfweB2Uhnw1aTX1lNehp
+      pmGgzfOXCLIatFr6/n9pmAyXR01O3AAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
